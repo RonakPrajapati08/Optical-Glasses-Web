@@ -1,0 +1,168 @@
+/* home page  */
+body {
+  font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
+  /* Sophisticated off-white / Alabaster */
+  background-color: #fbfbfa;
+}
+
+.serif {
+  font-family: "Cormorant Garamond", serif;
+}
+
+.glass-effect {
+  /* Tinted glass effect */
+  background: rgba(251, 251, 250, 0.85);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+}
+
+.letter-spacing-extra {
+  letter-spacing: 0.2em;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hover-warm:hover {
+  background-color: #f2f0eb;
+}
+
+/* hero */
+.clip-active {
+  clip-path: inset(0 0 0 0);
+}
+
+.clip-hidden {
+  clip-path: inset(0 100% 0 0);
+}
+
+/* Ken Burns Effect */
+.ken-burns {
+  animation: kenburns 8s ease-out forwards;
+}
+
+@keyframes kenburns {
+  0% {
+    transform: scale(1.15);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Staggered Text Reveal */
+.reveal-text {
+  overflow: hidden;
+}
+
+.reveal-text span {
+  display: block;
+  transform: translateY(110%);
+  transition: transform 1.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.active .reveal-text span {
+  transform: translateY(0);
+}
+
+/* Partners */
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 25s linear infinite;
+}
+
+/* Support for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee {
+    animation-duration: 0s;
+    overflow-x: auto;
+  }
+}
+
+/* Testimonial */
+.testimonial-slide {
+  display: none;
+  animation: fadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.testimonial-slide.active {
+  display: flex;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Product Image Hover Effect */
+.product-morph {
+  transition: all 0.5s ease;
+}
+
+.testimonial-slide:hover .product-morph {
+  transform: scale(1.05) rotate(-2deg);
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Image Swap Effect */
+.product-card .secondary-img {
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out, transform 0.8s ease-in-out;
+}
+
+.product-card:hover .secondary-img {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.product-card:hover .primary-img {
+  opacity: 0;
+}
+
+/* Footer Section */
+@keyframes wave-move {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(-25%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-wave {
+  animation: wave-move 15s ease-in-out infinite;
+}

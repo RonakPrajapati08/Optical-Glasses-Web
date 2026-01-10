@@ -1,0 +1,1578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina Optique | Premium Eyewear & Care</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Load Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="text-slate-900 overflow-x-hidden">
+
+    <!-- [NEW] Top Announcement Bar (Offers / Free Eye Test) -->
+    <div
+        class="bg-zinc-950 text-white py-2 text-[9px] uppercase tracking-[0.4em] text-center font-bold relative z-[60]">
+        Complimentary Eye Exam with every Bespoke Frame — <a href="#"
+            class="underline decoration-teal-500 underline-offset-4">Book Yours</a>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-effect border-b border-stone-200 top-8 md:top-7">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="text-2xl font-semibold tracking-tighter serif uppercase">Lumina <span
+                    class="font-light text-slate-400">Optique</span></div>
+            <div class="hidden md:flex space-x-10 text-[10px] uppercase tracking-[0.2em] font-semibold">
+                <a href="#home" class="hover:text-teal-800 transition">Home</a>
+                <a href="./about.html" class="hover:text-teal-800 transition">About</a>
+                <a href="#products" class="hover:text-teal-800 transition">Products</a>
+                <a href="#services" class="hover:text-teal-800 transition">Services</a>
+                <a href="#contact" class="hover:text-teal-800 transition">Contact</a>
+            </div>
+            <div class="flex items-center space-x-6">
+                <button
+                    class="text-[10px] border border-slate-900 px-5 py-2 hover:bg-slate-900 hover:text-white transition uppercase tracking-widest font-bold">Book
+                    Exam</button>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero" class="relative h-screen w-full bg-[#FBFBFA] overflow-hidden sans">
+
+        <!-- BIG BACKGROUND TEXT (Behind Everything) -->
+        <div class="absolute inset-0 flex items-center justify-center pointer-events-none select-none overflow-hidden">
+            <h2 id="bg-text"
+                class="text-[25vw] font-bold text-slate-100 uppercase tracking-tighter leading-none transition-all duration-1000 opacity-50">
+                Vision
+            </h2>
+        </div>
+
+        <!-- MAIN SLIDER CONTAINER -->
+        <div class="relative w-full h-full">
+
+            <!-- Slide 1 -->
+            <div class="slide absolute inset-0 z-10 active" data-bg-label="Artisan">
+                <div class="flex flex-col md:flex-row h-full">
+                    <!-- Image Side -->
+                    <div
+                        class="relative w-full md:w-3/5 h-1/2 md:h-full overflow-hidden transition-all duration-1000 clip-active slide-img-container">
+                        <img src="https://images.unsplash.com/photo-1574258495973-f010dfbb5371?auto=format&fit=crop&q=80&w=2000"
+                            class="w-full h-full object-cover ken-burns" alt="Eyewear">
+                        <!-- Overlay for depth -->
+                        <div class="absolute inset-0 bg-slate-900/10"></div>
+                    </div>
+                    <!-- Content Side -->
+                    <div class="w-full md:w-2/5 h-1/2 md:h-full flex items-center px-8 md:px-16 bg-transparent">
+                        <div class="max-w-md">
+                            <div class="reveal-text mb-4">
+                                <span
+                                    class="text-teal-800 uppercase tracking-[0.4em] text-[10px] font-bold delay-100">Handcrafted
+                                    in Italy</span>
+                            </div>
+                            <div class="reveal-text mb-6">
+                                <span class="text-5xl md:text-7xl serif text-slate-900 leading-tight delay-200">The
+                                    Artisan <br><i class="font-light text-slate-400">Series</i></span>
+                            </div>
+                            <div class="reveal-text mb-10">
+                                <span class="text-slate-500 leading-relaxed font-light delay-300">Defining the
+                                    intersection of avant-garde design and optical precision.</span>
+                            </div>
+                            <div class="reveal-text">
+                                <span class="delay-400">
+                                    <button
+                                        class="group relative px-8 py-4 bg-slate-900 text-white text-[11px] uppercase tracking-widest font-bold overflow-hidden transition-all">
+                                        <span class="relative z-10">Discover Collection</span>
+                                        <div
+                                            class="absolute inset-0 bg-teal-800 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                                        </div>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="slide absolute inset-0 z-0 opacity-0" data-bg-label="Purity">
+                <div class="flex flex-col md:flex-row h-full">
+                    <div
+                        class="relative w-full md:w-3/5 h-1/2 md:h-full overflow-hidden transition-all duration-1000 clip-hidden slide-img-container">
+                        <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&q=80&w=2000"
+                            class="w-full h-full object-cover" alt="Eyewear">
+                        <div class="absolute inset-0 bg-slate-900/10"></div>
+                    </div>
+                    <div class="w-full md:w-2/5 h-1/2 md:h-full flex items-center px-8 md:px-16">
+                        <div class="max-w-md">
+                            <div class="reveal-text mb-4">
+                                <span
+                                    class="text-teal-800 uppercase tracking-[0.4em] text-[10px] font-bold delay-100">Next-Gen
+                                    Optics</span>
+                            </div>
+                            <div class="reveal-text mb-6">
+                                <span class="text-5xl md:text-7xl serif text-slate-900 leading-tight delay-200">Visual
+                                    <br><i class="font-light text-slate-400">Purity</i></span>
+                            </div>
+                            <div class="reveal-text mb-10">
+                                <span class="text-slate-500 leading-relaxed font-light delay-300">Engineered with 0.01D
+                                    precision for a distortion-free world.</span>
+                            </div>
+                            <div class="reveal-text">
+                                <span class="delay-400">
+                                    <button
+                                        class="group relative px-8 py-4 bg-slate-900 text-white text-[11px] uppercase tracking-widest font-bold overflow-hidden transition-all">
+                                        <span class="relative z-10">Explore Technology</span>
+                                        <div
+                                            class="absolute inset-0 bg-teal-800 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                                        </div>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- UI CONTROLS -->
+        <div class="absolute bottom-10 left-0 w-full z-40 px-8 md:px-16 flex justify-between items-end">
+            <!-- Progress Indicator -->
+            <div class="flex items-center gap-6">
+                <div class="text-xs font-bold tracking-widest text-slate-900 overflow-hidden h-4">
+                    <div id="counter" class="transition-transform duration-500 transform translate-y-0">
+                        <div>01</div>
+                        <div>02</div>
+                    </div>
+                </div>
+                <div class="w-32 h-[2px] bg-slate-200 relative">
+                    <div id="progress-bar"
+                        class="absolute left-0 top-0 h-full bg-slate-900 w-0 transition-all duration-[6000ms] ease-linear">
+                    </div>
+                </div>
+                <div class="text-xs font-bold tracking-widest text-slate-300">02</div>
+            </div>
+
+            <!-- Arrows -->
+            <div class="flex gap-2">
+                <button onclick="changeSlide('prev')"
+                    class="w-14 h-14 flex items-center justify-center border border-slate-200 hover:bg-slate-900 hover:text-white transition-all duration-300 rounded-full">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.5">
+                        <path d="M19 12H5M12 19l-7-7 7-7" />
+                    </svg>
+                </button>
+                <button onclick="changeSlide('next')"
+                    class="w-14 h-14 flex items-center justify-center border border-slate-200 hover:bg-slate-900 hover:text-white transition-all duration-300 rounded-full">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.5">
+                        <path d="M5 12h14m-7 7 7-7-7-7" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- [NEW] Brand Logos Section -->
+    <section class="py-16 border-b border-stone-100 bg-slate-900 text-[#FBFBFA] overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 mb-8 text-center">
+            <p class="text-sm uppercase tracking-[0.3em] opacity-50">Our Partners</p>
+        </div>
+
+        <!-- Main Slider Container -->
+        <div class="relative flex overflow-x-hidden">
+
+            <div
+                class="flex animate-marquee whitespace-nowrap gap-12 md:gap-24 items-center opacity-40 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500 hover:[animation-play-state:paused]">
+
+                <!-- Original Set -->
+                <span class="serif text-xl md:text-3xl tracking-widest mx-4">ZEISS</span>
+                <span class="serif text-xl md:text-3xl tracking-widest mx-4">RODENSTOCK</span>
+                <span class="serif text-xl md:text-3xl tracking-widest mx-4">ESSILOR</span>
+                <span class="serif text-xl md:text-3xl tracking-widest mx-4">LUXOTTICA</span>
+                <span class="serif text-xl md:text-3xl tracking-widest mx-4">NIKON</span>
+
+                <!-- Duplicate Set (Required for seamless looping) -->
+                <span class="serif text-xl md:text-3xl tracking-widest mx-4">ZEISS</span>
+                <span class="serif text-xl md:text-3xl tracking-widest mx-4">RODENSTOCK</span>
+                <span class="serif text-xl md:text-3xl tracking-widest mx-4">ESSILOR</span>
+                <span class="serif text-xl md:text-3xl tracking-widest mx-4">LUXOTTICA</span>
+                <span class="serif text-xl md:text-3xl tracking-widest mx-4">NIKON</span>
+            </div>
+
+            <!-- Optional: Gradient Overlays for a "Modern" Fade effect on edges -->
+            <div
+                class="pointer-events-none absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-slate-900 to-transparent">
+            </div>
+            <div
+                class="pointer-events-none absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-slate-900 to-transparent">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-32">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+                <div class="order-2 lg:order-1">
+                    <span class="text-teal-800 text-[10px] font-bold uppercase tracking-[0.4em] mb-6 block">Our
+                        Heritage</span>
+                    <h2 class="text-5xl md:text-6xl serif leading-tight mb-8">Three Decades of <br><span
+                            class="italic text-slate-400">Optical Artistry.</span></h2>
+                    <p class="text-slate-500 text-lg leading-relaxed mb-6">Founded in the heart of Florence, Lumina
+                        Optique began as a small family atelier dedicated to the preservation of traditional
+                        frame-making.</p>
+                    <p class="text-slate-500 text-lg leading-relaxed mb-10">We bridge the gap between historical
+                        craftsmanship and futuristic lens technology, curated for the modern visionary.</p>
+                    <div class="grid grid-cols-2 gap-10 border-t border-stone-200 pt-10">
+                        <div>
+                            <h4 class="serif text-4xl mb-2 text-teal-900">100+</h4>
+                            <p class="text-[10px] uppercase tracking-widest text-slate-400 font-bold">Artisan Frames</p>
+                        </div>
+                        <div>
+                            <h4 class="serif text-4xl mb-2 text-teal-900">24/7</h4>
+                            <p class="text-[10px] uppercase tracking-widest text-slate-400 font-bold">Optical Support
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2">
+                    <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=1000"
+                        class="w-full grayscale transition duration-700 hover:grayscale-0" alt="Workshop">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section (Warm Background) -->
+    <section class="py-24 bg-[#F2F0EB]">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-20">
+                <span class="text-teal-800 text-[10px] font-bold uppercase tracking-[0.4em] mb-4 block">Shop by
+                    category</span>
+                <h2 class="text-5xl serif">Curated Selections</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="group relative overflow-hidden aspect-[3/4] cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1512446816042-444d641267d4?auto=format&fit=crop&q=80&w=800"
+                        class="w-full h-full object-cover transition duration-1000 group-hover:scale-105" alt="Men's">
+                    <div class="absolute inset-0 bg-stone-900/20 group-hover:bg-stone-900/40 transition duration-500">
+                    </div>
+                    <div class="absolute inset-0 flex flex-col justify-center items-center text-white">
+                        <h3 class="serif text-4xl mb-4">The Atelier</h3>
+                        <span
+                            class="text-[10px] uppercase tracking-[0.3em] border-b border-white pb-1 opacity-0 group-hover:opacity-100 transition duration-500">View
+                            Men's</span>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden aspect-[3/4] cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&q=80&w=800"
+                        class="w-full h-full object-cover transition duration-1000 group-hover:scale-105" alt="Women's">
+                    <div class="absolute inset-0 bg-stone-900/20 group-hover:bg-stone-900/40 transition duration-500">
+                    </div>
+                    <div class="absolute inset-0 flex flex-col justify-center items-center text-white">
+                        <h3 class="serif text-4xl mb-4">The Muse</h3>
+                        <span
+                            class="text-[10px] uppercase tracking-[0.3em] border-b border-white pb-1 opacity-0 group-hover:opacity-100 transition duration-500">View
+                            Women's</span>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden aspect-[3/4] cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1508296695146-257a814070b4?auto=format&fit=crop&q=80&w=800"
+                        class="w-full h-full object-cover transition duration-1000 group-hover:scale-105"
+                        alt="Accessories">
+                    <div class="absolute inset-0 bg-stone-900/20 group-hover:bg-stone-900/40 transition duration-500">
+                    </div>
+                    <div class="absolute inset-0 flex flex-col justify-center items-center text-white">
+                        <h3 class="serif text-4xl mb-4">Sun Series</h3>
+                        <span
+                            class="text-[10px] uppercase tracking-[0.3em] border-b border-white pb-1 opacity-0 group-hover:opacity-100 transition duration-500">View
+                            Sun</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- [NEW] Shop by Type (Frames, Sunglasses, Contact Lenses) -->
+    <section id="shop-type" class="py-24 bg-white border-b border-stone-100">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="p-12 border border-stone-100 text-center hover:bg-[#FBFBFA] transition cursor-pointer">
+                <h4 class="text-[11px] uppercase tracking-[0.4em] font-bold text-teal-800 mb-4">Type 01</h4>
+                <h3 class="serif text-3xl mb-6">Optical Frames</h3>
+                <p class="text-xs text-slate-400 mb-8">Architectural precision for everyday clarity.</p>
+                <a href="#"
+                    class="text-[10px] uppercase tracking-widest font-bold border-b border-slate-900 pb-1">Explore</a>
+            </div>
+            <div class="p-12 border border-stone-100 text-center hover:bg-[#FBFBFA] transition cursor-pointer">
+                <h4 class="text-[11px] uppercase tracking-[0.4em] font-bold text-teal-800 mb-4">Type 02</h4>
+                <h3 class="serif text-3xl mb-6">Sun Protection</h3>
+                <p class="text-xs text-slate-400 mb-8">High-performance polarized aesthetics.</p>
+                <a href="#"
+                    class="text-[10px] uppercase tracking-widest font-bold border-b border-slate-900 pb-1">Explore</a>
+            </div>
+            <div class="p-12 border border-stone-100 text-center hover:bg-[#FBFBFA] transition cursor-pointer">
+                <h4 class="text-[11px] uppercase tracking-[0.4em] font-bold text-teal-800 mb-4">Type 03</h4>
+                <h3 class="serif text-3xl mb-6">Contact Lenses</h3>
+                <p class="text-xs text-slate-400 mb-8">Advanced moisture-lock visual freedom.</p>
+                <a href="#"
+                    class="text-[10px] uppercase tracking-widest font-bold border-b border-slate-900 pb-1">Explore</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ultra-Modern Company Features Section -->
+    <section class="py-32 bg-[#F2F0EB] overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+
+            <!-- Section Header -->
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8">
+                <div class="max-w-xl">
+                    <span class="text-teal-800 text-[10px] font-bold uppercase tracking-[0.5em] mb-6 block">The Lumina
+                        standard</span>
+                    <h2 class="text-5xl md:text-6xl serif leading-tight text-slate-900">
+                        Precision in <br> <span class="italic text-slate-400">Every Detail.</span>
+                    </h2>
+                </div>
+                <div class="hidden lg:block pb-4">
+                    <div class="w-32 h-[1px] bg-stone-300"></div>
+                </div>
+            </div>
+
+            <!-- Features Grid: Architectural Panel Style -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+
+                <!-- Feature 1: Global Logistics -->
+                <div
+                    class="group relative bg-[#FBFBFA] p-10 lg:p-12 transition-all duration-700 ease-[cubic-bezier(0.23,1,0.32,1)] hover:bg-white hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.08)]">
+                    <!-- Icon with soft background glow on hover -->
+                    <div class="relative w-12 h-12 mb-12 text-teal-900 z-10">
+                        <svg class="transition-transform duration-700 group-hover:scale-110" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path
+                                d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                            </path>
+                        </svg>
+                        <div
+                            class="absolute inset-0 bg-teal-100/0 group-hover:bg-teal-100/40 rounded-full blur-2xl transition-all duration-700 -z-10">
+                        </div>
+                    </div>
+
+                    <div class="relative z-10">
+                        <h4 class="text-[11px] uppercase tracking-[0.25em] font-bold text-slate-900 mb-6">Global
+                            Logistics</h4>
+                        <p class="text-[13px] text-slate-500 leading-relaxed font-light mb-8">Complimentary white-glove
+                            shipping on all boutique orders worldwide, tracked to your door.</p>
+                    </div>
+
+                    <!-- Animated Corner Accent -->
+                    <div
+                        class="absolute top-0 right-0 w-0 h-[2px] bg-teal-800 transition-all duration-700 group-hover:w-full">
+                    </div>
+                </div>
+
+                <!-- Feature 2: 24-Month Guarantee -->
+                <div
+                    class="group relative bg-[#FBFBFA] p-10 lg:p-12 transition-all duration-700 ease-[cubic-bezier(0.23,1,0.32,1)] hover:bg-white hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.08)]">
+                    <div class="relative w-12 h-12 mb-12 text-teal-900 z-10">
+                        <svg class="transition-transform duration-700 group-hover:scale-110" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            <path d="m9 12 2 2 4-4"></path>
+                        </svg>
+                        <div
+                            class="absolute inset-0 bg-teal-100/0 group-hover:bg-teal-100/40 rounded-full blur-2xl transition-all duration-700 -z-10">
+                        </div>
+                    </div>
+
+                    <div class="relative z-10">
+                        <h4 class="text-[11px] uppercase tracking-[0.25em] font-bold text-slate-900 mb-6">Craft Warranty
+                        </h4>
+                        <p class="text-[13px] text-slate-500 leading-relaxed font-light mb-8">Every frame is backed by
+                            our comprehensive artisan craftsmanship and digital lens guarantee.</p>
+                    </div>
+                    <div
+                        class="absolute top-0 right-0 w-0 h-[2px] bg-teal-800 transition-all duration-700 group-hover:w-full">
+                    </div>
+                </div>
+
+                <!-- Feature 3: Atelier Care -->
+                <div
+                    class="group relative bg-[#FBFBFA] p-10 lg:p-12 transition-all duration-700 ease-[cubic-bezier(0.23,1,0.32,1)] hover:bg-white hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.08)]">
+                    <div class="relative w-12 h-12 mb-12 text-teal-900 z-10">
+                        <svg class="transition-transform duration-700 group-hover:scale-110" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path
+                                d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.77 3.77z">
+                            </path>
+                        </svg>
+                        <div
+                            class="absolute inset-0 bg-teal-100/0 group-hover:bg-teal-100/40 rounded-full blur-2xl transition-all duration-700 -z-10">
+                        </div>
+                    </div>
+
+                    <div class="relative z-10">
+                        <h4 class="text-[11px] uppercase tracking-[0.25em] font-bold text-slate-900 mb-6">Atelier Care
+                        </h4>
+                        <p class="text-[13px] text-slate-500 leading-relaxed font-light mb-8">Visit any global studio
+                            for life-long anatomical adjustments and ultrasonic deep cleaning.</p>
+                    </div>
+                    <div
+                        class="absolute top-0 right-0 w-0 h-[2px] bg-teal-800 transition-all duration-700 group-hover:w-full">
+                    </div>
+                </div>
+
+                <!-- Feature 4: HD Visual Engine -->
+                <div
+                    class="group relative bg-[#FBFBFA] p-10 lg:p-12 transition-all duration-700 ease-[cubic-bezier(0.23,1,0.32,1)] hover:bg-white hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.08)]">
+                    <div class="relative w-12 h-12 mb-12 text-teal-900 z-10">
+                        <svg class="transition-transform duration-700 group-hover:scale-110" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="3"></circle>
+                            <path d="M3 12h3m12 0h3M12 3v3m0 12v3"></path>
+                            <path d="M5.6 5.6l2.1 2.1m8.6 8.6l2.1 2.1M5.6 18.4l2.1-2.1m8.6-8.6l2.1-2.1"></path>
+                        </svg>
+                        <div
+                            class="absolute inset-0 bg-teal-100/0 group-hover:bg-teal-100/40 rounded-full blur-2xl transition-all duration-700 -z-10">
+                        </div>
+                    </div>
+
+                    <div class="relative z-10">
+                        <h4 class="text-[11px] uppercase tracking-[0.25em] font-bold text-slate-900 mb-6">HD Visual
+                            Engine</h4>
+                        <p class="text-[13px] text-slate-500 leading-relaxed font-light mb-8">Proprietary digital
+                            surfacing provides 0.01D accuracy for unmatched visual clarity.</p>
+                    </div>
+                    <div
+                        class="absolute top-0 right-0 w-0 h-[2px] bg-teal-800 transition-all duration-700 group-hover:w-full">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="py-20 bg-[#FBFBFA]">
+        <div class="max-w-7xl mx-auto px-4 md:px-6">
+
+            <!-- Editorial Header (Keep as is) -->
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12 md:mb-16 gap-8">
+                <div class="max-w-xl">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="w-8 h-[1px] bg-teal-800"></span>
+                        <span class="text-teal-800 text-[10px] font-bold uppercase tracking-[0.4em]">The 2026
+                            Collection</span>
+                    </div>
+                    <h2 class="text-4xl md:text-5xl serif text-slate-900 leading-tight">New <span
+                            class="italic text-slate-400">Perspectives</span></h2>
+                </div>
+                <div
+                    class="flex items-center w-full md:w-auto overflow-x-auto hide-scrollbar border-b md:border-none border-slate-200">
+                    <nav
+                        class="flex gap-8 text-[11px] uppercase tracking-widest font-semibold text-slate-400 whitespace-nowrap pb-3 md:pb-0">
+                        <a href="#" class="text-slate-900 border-b-2 border-slate-900 pb-1">All Models</a>
+                        <a href="#" class="hover:text-slate-900 transition">Optical</a>
+                        <a href="#" class="hover:text-slate-900 transition">Sunglasses</a>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
+
+                <!-- Card 1: The Artisan -->
+                <div
+                    class="group product-card bg-white p-2 md:p-3 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <div class="relative aspect-[4/5] overflow-hidden bg-[#F9F9F9] rounded-lg mb-4">
+                        <div class="absolute top-2 left-2 z-20">
+                            <span
+                                class="bg-slate-900 text-white px-2 py-1 text-[7px] md:text-[9px] font-bold uppercase tracking-widest rounded-sm">New
+                                Arrival</span>
+                        </div>
+                        <button
+                            class="absolute top-2 right-2 z-20 w-8 h-8 flex items-center justify-center bg-white/80 backdrop-blur-sm rounded-full text-slate-400 hover:text-red-500 transition-colors shadow-sm">
+                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                            </svg>
+                        </button>
+                        <div class="w-full h-full relative p-4">
+                            <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&q=80&w=800"
+                                class="primary-img absolute inset-0 w-full h-full object-contain p-4 transition-opacity duration-700">
+                            <img src="https://images.unsplash.com/photo-1591076482161-42ce6da69f67?auto=format&fit=crop&q=80&w=800"
+                                class="secondary-img absolute inset-0 w-full h-full object-contain p-4">
+                        </div>
+                        <div
+                            class="hidden md:flex absolute bottom-0 left-0 w-full p-2 translate-y-full group-hover:translate-y-0 transition-transform duration-500">
+                            <button
+                                class="w-full bg-slate-900 text-white py-3 text-[10px] font-bold uppercase tracking-widest rounded-md hover:bg-black">Add
+                                To Bag</button>
+                        </div>
+                    </div>
+                    <div class="px-1 pb-2">
+                        <div class="flex justify-between items-start">
+                            <h3
+                                class="text-[11px] md:text-xs font-bold uppercase tracking-widest text-slate-900 truncate">
+                                The Artisan</h3>
+                            <span class="text-[11px] md:text-xs font-bold text-slate-900">₹24,500</span>
+                        </div>
+                        <p class="text-[10px] md:text-[11px] text-slate-500 mt-1 line-clamp-1">Smoked Tortoise Frames
+                        </p>
+                        <div class="flex gap-1.5 mt-3">
+                            <div class="w-2.5 h-2.5 rounded-full bg-[#4A3728] ring-1 ring-offset-1 ring-slate-900">
+                            </div>
+                            <div class="w-2.5 h-2.5 rounded-full bg-black"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Gold Aura -->
+                <div
+                    class="group product-card bg-white p-2 md:p-3 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <div class="relative aspect-[4/5] overflow-hidden bg-[#F9F9F9] rounded-lg mb-4">
+                        <div class="absolute top-2 left-2 z-20">
+                            <span
+                                class="bg-teal-800 text-white px-2 py-1 text-[7px] md:text-[9px] font-bold uppercase tracking-widest rounded-sm">Limited</span>
+                        </div>
+                        <button
+                            class="absolute top-2 right-2 z-20 w-8 h-8 flex items-center justify-center bg-white/80 backdrop-blur-sm rounded-full text-slate-400 hover:text-red-500 transition-colors shadow-sm">
+                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                            </svg>
+                        </button>
+                        <div class="w-full h-full relative p-4">
+                            <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&q=80&w=800"
+                                class="primary-img absolute inset-0 w-full h-full object-contain p-4 transition-opacity duration-700">
+                            <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&q=80&w=800"
+                                class="secondary-img absolute inset-0 w-full h-full object-contain p-4">
+                        </div>
+                        <div
+                            class="hidden md:flex absolute bottom-0 left-0 w-full p-2 translate-y-full group-hover:translate-y-0 transition-transform duration-500">
+                            <button
+                                class="w-full bg-slate-900 text-white py-3 text-[10px] font-bold uppercase tracking-widest rounded-md hover:bg-black">Add
+                                To Bag</button>
+                        </div>
+                    </div>
+                    <div class="px-1 pb-2">
+                        <div class="flex justify-between items-start">
+                            <h3
+                                class="text-[11px] md:text-xs font-bold uppercase tracking-widest text-slate-900 truncate">
+                                Gold Aura</h3>
+                            <span class="text-[11px] md:text-xs font-bold text-slate-900">₹32,000</span>
+                        </div>
+                        <p class="text-[10px] md:text-[11px] text-slate-500 mt-1 line-clamp-1">24k Gold Plated Lenses
+                        </p>
+                        <div class="flex gap-1.5 mt-3">
+                            <div class="w-2.5 h-2.5 rounded-full bg-[#D4AF37] ring-1 ring-offset-1 ring-slate-900">
+                            </div>
+                            <div class="w-2.5 h-2.5 rounded-full bg-slate-200"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Shield Elite -->
+                <div
+                    class="group product-card bg-white p-2 md:p-3 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <div class="relative aspect-[4/5] overflow-hidden bg-[#F9F9F9] rounded-lg mb-4">
+                        <div class="absolute top-2 left-2 z-20">
+                            <span
+                                class="bg-amber-600 text-white px-2 py-1 text-[7px] md:text-[9px] font-bold uppercase tracking-widest rounded-sm">Best
+                                Seller</span>
+                        </div>
+                        <button
+                            class="absolute top-2 right-2 z-20 w-8 h-8 flex items-center justify-center bg-white/80 backdrop-blur-sm rounded-full text-slate-400 hover:text-red-500 transition-colors shadow-sm">
+                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                            </svg>
+                        </button>
+                        <div class="w-full h-full relative p-4">
+                            <img src="https://images.unsplash.com/photo-1577803645773-f96470509666?auto=format&fit=crop&q=80&w=800"
+                                class="primary-img absolute inset-0 w-full h-full object-contain p-4 transition-opacity duration-700">
+                            <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&q=80&w=800"
+                                class="secondary-img absolute inset-0 w-full h-full object-contain p-4">
+                        </div>
+                        <div
+                            class="hidden md:flex absolute bottom-0 left-0 w-full p-2 translate-y-full group-hover:translate-y-0 transition-transform duration-500">
+                            <button
+                                class="w-full bg-slate-900 text-white py-3 text-[10px] font-bold uppercase tracking-widest rounded-md hover:bg-black">Add
+                                To Bag</button>
+                        </div>
+                    </div>
+                    <div class="px-1 pb-2">
+                        <div class="flex justify-between items-start">
+                            <h3
+                                class="text-[11px] md:text-xs font-bold uppercase tracking-widest text-slate-900 truncate">
+                                Shield Elite</h3>
+                            <span class="text-[11px] md:text-xs font-bold text-slate-900">₹18,200</span>
+                        </div>
+                        <p class="text-[10px] md:text-[11px] text-slate-500 mt-1 line-clamp-1">Matte Black Polarized</p>
+                        <div class="flex gap-1.5 mt-3">
+                            <div class="w-2.5 h-2.5 rounded-full bg-black ring-1 ring-offset-1 ring-slate-900"></div>
+                            <div class="w-2.5 h-2.5 rounded-full bg-slate-800"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4: Lumina Crystal -->
+                <div
+                    class="group product-card bg-white p-2 md:p-3 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <div class="relative aspect-[4/5] overflow-hidden bg-[#F9F9F9] rounded-lg mb-4">
+                        <div class="absolute top-2 left-2 z-20">
+                            <span
+                                class="bg-slate-900 text-white px-2 py-1 text-[7px] md:text-[9px] font-bold uppercase tracking-widest rounded-sm">New
+                                Arrival</span>
+                        </div>
+                        <button
+                            class="absolute top-2 right-2 z-20 w-8 h-8 flex items-center justify-center bg-white/80 backdrop-blur-sm rounded-full text-slate-400 hover:text-red-500 transition-colors shadow-sm">
+                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                            </svg>
+                        </button>
+                        <div class="w-full h-full relative p-4">
+                            <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&q=80&w=800"
+                                class="primary-img absolute inset-0 w-full h-full object-contain p-4 transition-opacity duration-700">
+                            <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&q=80&w=800"
+                                class="secondary-img absolute inset-0 w-full h-full object-contain p-4">
+                        </div>
+                        <div
+                            class="hidden md:flex absolute bottom-0 left-0 w-full p-2 translate-y-full group-hover:translate-y-0 transition-transform duration-500">
+                            <button
+                                class="w-full bg-slate-900 text-white py-3 text-[10px] font-bold uppercase tracking-widest rounded-md hover:bg-black">Add
+                                To Bag</button>
+                        </div>
+                    </div>
+                    <div class="px-1 pb-2">
+                        <div class="flex justify-between items-start">
+                            <h3
+                                class="text-[11px] md:text-xs font-bold uppercase tracking-widest text-slate-900 truncate">
+                                Lumina Crystal</h3>
+                            <span class="text-[11px] md:text-xs font-bold text-slate-900">₹21,000</span>
+                        </div>
+                        <p class="text-[10px] md:text-[11px] text-slate-500 mt-1 line-clamp-1">Transparent Architectural
+                            Glass</p>
+                        <div class="flex gap-1.5 mt-3">
+                            <div class="w-2.5 h-2.5 rounded-full bg-white border ring-1 ring-offset-1 ring-slate-300">
+                            </div>
+                            <div class="w-2.5 h-2.5 rounded-full bg-blue-100 border"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5: Azure Tide -->
+                <div
+                    class="group product-card bg-white p-2 md:p-3 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <div class="relative aspect-[4/5] overflow-hidden bg-[#F9F9F9] rounded-lg mb-4">
+                        <button
+                            class="absolute top-2 right-2 z-20 w-8 h-8 flex items-center justify-center bg-white/80 backdrop-blur-sm rounded-full text-slate-400 hover:text-red-500 transition-colors shadow-sm">
+                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                            </svg>
+                        </button>
+                        <div class="w-full h-full relative p-4">
+                            <img src="https://images.unsplash.com/photo-1582142306909-195724d33927?auto=format&fit=crop&q=80&w=800"
+                                class="primary-img absolute inset-0 w-full h-full object-contain p-4 transition-opacity duration-700">
+                            <img src="https://images.unsplash.com/photo-1591076482161-42ce6da69f67?auto=format&fit=crop&q=80&w=800"
+                                class="secondary-img absolute inset-0 w-full h-full object-contain p-4">
+                        </div>
+                    </div>
+                    <div class="px-1 pb-2">
+                        <div class="flex justify-between items-start">
+                            <h3
+                                class="text-[11px] md:text-xs font-bold uppercase tracking-widest text-slate-900 truncate">
+                                Azure Tide</h3>
+                            <span class="text-[11px] md:text-xs font-bold text-slate-900">₹29,900</span>
+                        </div>
+                        <p class="text-[10px] md:text-[11px] text-slate-500 mt-1 line-clamp-1">Blue Gradient Titanium
+                        </p>
+                        <div class="flex gap-1.5 mt-3">
+                            <div class="w-2.5 h-2.5 rounded-full bg-blue-900 ring-1 ring-offset-1 ring-slate-900"></div>
+                            <div class="w-2.5 h-2.5 rounded-full bg-slate-500"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6: Velvet Dusk -->
+                <div
+                    class="group product-card bg-white p-2 md:p-3 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <div class="relative aspect-[4/5] overflow-hidden bg-[#F9F9F9] rounded-lg mb-4">
+                        <div class="absolute top-2 left-2 z-20">
+                            <span
+                                class="bg-red-900 text-white px-2 py-1 text-[7px] md:text-[9px] font-bold uppercase tracking-widest rounded-sm">Sold
+                                Out Soon</span>
+                        </div>
+                        <button
+                            class="absolute top-2 right-2 z-20 w-8 h-8 flex items-center justify-center bg-white/80 backdrop-blur-sm rounded-full text-slate-400 hover:text-red-500 transition-colors shadow-sm">
+                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                            </svg>
+                        </button>
+                        <div class="w-full h-full relative p-4">
+                            <img src="https://images.unsplash.com/photo-1574258495973-f010dfbb5371?auto=format&fit=crop&q=80&w=800"
+                                class="primary-img absolute inset-0 w-full h-full object-contain p-4 transition-opacity duration-700">
+                            <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&q=80&w=800"
+                                class="secondary-img absolute inset-0 w-full h-full object-contain p-4">
+                        </div>
+                    </div>
+                    <div class="px-1 pb-2">
+                        <div class="flex justify-between items-start">
+                            <h3
+                                class="text-[11px] md:text-xs font-bold uppercase tracking-widest text-slate-900 truncate">
+                                Velvet Dusk</h3>
+                            <span class="text-[11px] md:text-xs font-bold text-slate-900">₹15,500</span>
+                        </div>
+                        <p class="text-[10px] md:text-[11px] text-slate-500 mt-1 line-clamp-1">Deep Burgundy Acetate</p>
+                        <div class="flex gap-1.5 mt-3">
+                            <div class="w-2.5 h-2.5 rounded-full bg-red-950 ring-1 ring-offset-1 ring-slate-900"></div>
+                            <div class="w-2.5 h-2.5 rounded-full bg-black"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 7: Carbon Stealth -->
+                <div
+                    class="group product-card bg-white p-2 md:p-3 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <div class="relative aspect-[4/5] overflow-hidden bg-[#F9F9F9] rounded-lg mb-4">
+                        <div class="absolute top-2 left-2 z-20">
+                            <span
+                                class="bg-indigo-900 text-white px-2 py-1 text-[7px] md:text-[9px] font-bold uppercase tracking-widest rounded-sm">Top
+                                Rated</span>
+                        </div>
+                        <button
+                            class="absolute top-2 right-2 z-20 w-8 h-8 flex items-center justify-center bg-white/80 backdrop-blur-sm rounded-full text-slate-400 hover:text-red-500 transition-colors shadow-sm">
+                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                            </svg>
+                        </button>
+                        <div class="w-full h-full relative p-4">
+                            <img src="https://images.unsplash.com/photo-1591076482161-42ce6da69f67?auto=format&fit=crop&q=80&w=800"
+                                class="primary-img absolute inset-0 w-full h-full object-contain p-4 transition-opacity duration-700">
+                            <img src="https://images.unsplash.com/photo-1577803645773-f96470509666?auto=format&fit=crop&q=80&w=800"
+                                class="secondary-img absolute inset-0 w-full h-full object-contain p-4">
+                        </div>
+                    </div>
+                    <div class="px-1 pb-2">
+                        <div class="flex justify-between items-start">
+                            <h3
+                                class="text-[11px] md:text-xs font-bold uppercase tracking-widest text-slate-900 truncate">
+                                Carbon Stealth</h3>
+                            <span class="text-[11px] md:text-xs font-bold text-slate-900">₹34,200</span>
+                        </div>
+                        <p class="text-[10px] md:text-[11px] text-slate-500 mt-1 line-clamp-1">Carbon Fiber Performance
+                        </p>
+                        <div class="flex gap-1.5 mt-3">
+                            <div class="w-2.5 h-2.5 rounded-full bg-slate-900 ring-1 ring-offset-1 ring-slate-900">
+                            </div>
+                            <div class="w-2.5 h-2.5 rounded-full bg-gray-600"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 8: Amber Wayfarer -->
+                <div
+                    class="group product-card bg-white p-2 md:p-3 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <div class="relative aspect-[4/5] overflow-hidden bg-[#F9F9F9] rounded-lg mb-4">
+                        <div class="absolute top-2 left-2 z-20">
+                            <span
+                                class="bg-orange-600 text-white px-2 py-1 text-[7px] md:text-[9px] font-bold uppercase tracking-widest rounded-sm">Sale</span>
+                        </div>
+                        <button
+                            class="absolute top-2 right-2 z-20 w-8 h-8 flex items-center justify-center bg-white/80 backdrop-blur-sm rounded-full text-slate-400 hover:text-red-500 transition-colors shadow-sm">
+                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                            </svg>
+                        </button>
+                        <div class="w-full h-full relative p-4">
+                            <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&q=80&w=800"
+                                class="primary-img absolute inset-0 w-full h-full object-contain p-4 transition-opacity duration-700">
+                            <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&q=80&w=800"
+                                class="secondary-img absolute inset-0 w-full h-full object-contain p-4">
+                        </div>
+                    </div>
+                    <div class="px-1 pb-2">
+                        <div class="flex justify-between items-start">
+                            <h3
+                                class="text-[11px] md:text-xs font-bold uppercase tracking-widest text-slate-900 truncate">
+                                Amber Way</h3>
+                            <span class="text-[11px] md:text-xs font-bold text-slate-900">₹12,800</span>
+                        </div>
+                        <p class="text-[10px] md:text-[11px] text-slate-500 mt-1 line-clamp-1">Classic Amber Gradient
+                        </p>
+                        <div class="flex gap-1.5 mt-3">
+                            <div class="w-2.5 h-2.5 rounded-full bg-orange-900 ring-1 ring-offset-1 ring-slate-900">
+                            </div>
+                            <div class="w-2.5 h-2.5 rounded-full bg-orange-200"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- [NEW] Prescription Glasses CTA -->
+    <section class="py-32 bg-[#F2F0EB]">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+            <div class="aspect-square bg-white border border-stone-200 relative p-8">
+                <img src="https://images.unsplash.com/photo-1516714819001-8ee7a13b71d7?auto=format&fit=crop&q=80&w=800"
+                    class="w-full h-full object-cover" alt="Clinical">
+                <div class="absolute -bottom-6 -right-6 bg-slate-900 text-white p-10 hidden lg:block">
+                    <p class="serif text-xl italic tracking-wide">"Clinical Precision. Micro-accuracy."</p>
+                </div>
+            </div>
+            <div>
+                <span class="text-teal-800 text-[10px] font-bold uppercase tracking-[0.5em] mb-6 block">Optical
+                    Health</span>
+                <h2 class="text-5xl serif leading-tight mb-8">Bespoke Lenses. <br><span
+                        class="italic text-slate-400">Micro-Surfaced.</span></h2>
+                <p class="text-slate-500 mb-10 leading-relaxed">Experience vision without compromise. Our in-house
+                    clinical laboratory ensures your prescription is surfacing with 0.01D precision.</p>
+                <button
+                    class="border border-slate-900 px-10 py-5 text-[10px] uppercase tracking-widest font-bold hover:bg-slate-900 hover:text-white transition">Book
+                    Eye Exam</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-32 bg-slate-900 text-[#FBFBFA]">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+            <div>
+                <span class="text-teal-400 text-[10px] uppercase tracking-[0.4em] font-bold mb-6 block">Our
+                    Distinction</span>
+                <h2 class="text-5xl serif leading-tight mb-12">The standard of <br><span
+                        class="italic text-slate-400">modern vision.</span></h2>
+                <div class="space-y-10">
+                    <div class="flex gap-6">
+                        <span class="serif text-3xl italic text-teal-500">I.</span>
+                        <div>
+                            <h4 class="text-sm uppercase tracking-widest font-bold mb-2">Anatomical Fit</h4>
+                            <p class="text-slate-400 text-sm leading-relaxed">Frames designed to respect the unique
+                                architecture of your face.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6">
+                        <span class="serif text-3xl italic text-teal-500">II.</span>
+                        <div>
+                            <h4 class="text-sm uppercase tracking-widest font-bold mb-2">Lumina Labs</h4>
+                            <p class="text-slate-400 text-sm leading-relaxed">Our in-house clinical laboratory ensures
+                                prescription perfection.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6">
+                        <span class="serif text-3xl italic text-teal-500">III.</span>
+                        <div>
+                            <h4 class="text-sm uppercase tracking-widest font-bold mb-2">Sustainable Luxury</h4>
+                            <p class="text-slate-400 text-sm leading-relaxed">Utilizing bio-based acetates and ethically
+                                sourced materials.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="relative h-[600px] flex items-center justify-center bg-[#FBFBFA] overflow-hidden rounded-3xl group"
+                style="perspective: 1000px;">
+
+                <!-- Subtle Inner Shadow -->
+                <div class="absolute inset-0 shadow-[inner_0_0_100px_rgba(0,0,0,0.02)]"></div>
+
+                <img src="./images/why-choose-us.png" class="w-auto h-[70%] object-contain transition-all duration-700 
+               group-hover:scale-110 
+               group-hover:[transform:rotateX(10deg)_rotateY(-15deg)_translateZ(50px)]
+               drop-shadow-2xl" style="mix-blend-mode: multiply;" alt="Excellence">
+
+                <!-- Floating Label -->
+                <div
+                    class="absolute bottom-12 opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-4 group-hover:translate-y-0">
+                    <span class="text-[10px] font-bold uppercase tracking-[0.5em] text-slate-400">Masterpiece No.
+                        11</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonial-section" class="py-24 bg-[#F8F7F5] sans overflow-hidden">
+        <div class="max-w-6xl mx-auto px-6">
+
+            <!-- Header -->
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4">
+                <div>
+                    <span class="text-teal-800 text-[10px] font-bold uppercase tracking-[0.3em] mb-4 block">Customer
+                        Stories</span>
+                    <h2 class="text-4xl serif text-slate-900">Trusted by <span
+                            class="italic text-slate-400">Visionaries</span></h2>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="text-4xl font-light text-slate-300">4.9</span>
+                    <div class="flex flex-col">
+                        <div class="flex text-teal-600">
+                            <svg class="w-3 h-3 fill-current" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg class="w-3 h-3 fill-current" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg class="w-3 h-3 fill-current" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg class="w-3 h-3 fill-current" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg class="w-3 h-3 fill-current" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                        </div>
+                        <span class="text-[9px] uppercase tracking-tighter text-slate-400 font-bold">From 500+
+                            reviews</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slider Main Body -->
+            <div
+                class="relative bg-white rounded-3xl p-8 md:p-16 shadow-sm border border-slate-100 min-h-[500px] flex items-center">
+
+                <!-- Slide 1 -->
+                <div class="testimonial-slide active flex-col md:flex-row items-center gap-12 w-full">
+                    <!-- Product Image (Easier to manage than customer photos) -->
+                    <div class="w-full md:w-1/2 flex justify-center">
+                        <div
+                            class="relative w-64 h-64 md:w-80 md:h-80 bg-[#f9f9f9] rounded-full flex items-center justify-center p-8">
+                            <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&q=80&w=800"
+                                class="product-morph w-full object-contain drop-shadow-2xl" alt="Product">
+                        </div>
+                    </div>
+                    <!-- Review Content -->
+                    <div class="w-full md:w-1/2">
+                        <svg class="w-10 h-10 text-slate-100 mb-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M14.017 21L14.017 18C14.017 16.899 14.899 16 16 16L18 16C18.11 16 18.219 16.009 18.324 16.026C18.139 14.931 17.513 13.914 16.516 13.136C15.52 12.359 14.249 11.9 12.983 11.9L12.983 9.9C15.003 9.9 16.944 10.655 18.347 11.98C19.75 13.305 20.484 15.011 20.484 16.711L20.484 21L14.017 21ZM3.517 21L3.517 18C3.517 16.899 4.399 16 5.5 16L7.5 16C7.61 16 7.719 16.009 7.824 16.026C7.639 14.931 7.013 13.914 6.016 13.136C5.02 12.359 3.749 11.9 2.483 11.9L2.483 9.9C4.503 9.9 6.444 10.655 7.847 11.98C9.25 13.305 9.984 15.011 9.984 16.711L9.984 21L3.517 21Z" />
+                        </svg>
+                        <p class="text-2xl md:text-3xl serif italic text-slate-800 leading-snug mb-8">
+                            "The clarity on these lenses is life-changing. I spend 8 hours a day on digital screens and
+                            the eye strain has completely vanished."
+                        </p>
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center text-white text-xs font-bold">
+                                AT</div>
+                            <div>
+                                <h4 class="text-sm font-bold text-slate-900 uppercase tracking-widest">Aris Thorne</h4>
+                                <p class="text-xs text-slate-400 uppercase tracking-widest">Verified Buyer — NYC</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="testimonial-slide flex-col md:flex-row items-center gap-12 w-full">
+                    <div class="w-full md:w-1/2 flex justify-center">
+                        <div
+                            class="relative w-64 h-64 md:w-80 md:h-80 bg-[#f9f9f9] rounded-full flex items-center justify-center p-8">
+                            <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&q=80&w=800"
+                                class="product-morph w-full object-contain drop-shadow-2xl" alt="Product">
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2">
+                        <svg class="w-10 h-10 text-slate-100 mb-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M14.017 21L14.017 18C14.017 16.899 14.899 16 16 16L18 16C18.11 16 18.219 16.009 18.324 16.026C18.139 14.931 17.513 13.914 16.516 13.136C15.52 12.359 14.249 11.9 12.983 11.9L12.983 9.9C15.003 9.9 16.944 10.655 18.347 11.98C19.75 13.305 20.484 15.011 20.484 16.711L20.484 21L14.017 21ZM3.517 21L3.517 18C3.517 16.899 4.399 16 5.5 16L7.5 16C7.61 16 7.719 16.009 7.824 16.026C7.639 14.931 7.013 13.914 6.016 13.136C5.02 12.359 3.749 11.9 2.483 11.9L2.483 9.9C4.503 9.9 6.444 10.655 7.847 11.98C9.25 13.305 9.984 15.011 9.984 16.711L9.984 21L3.517 21Z" />
+                        </svg>
+                        <p class="text-2xl md:text-3xl serif italic text-slate-800 leading-snug mb-8">
+                            "The craftsmanship is evident the moment you hold them. Italian design at its absolute
+                            finest. These are now my daily essentials."
+                        </p>
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center text-white text-xs font-bold">
+                                JV</div>
+                            <div>
+                                <h4 class="text-sm font-bold text-slate-900 uppercase tracking-widest">Julianna Vane
+                                </h4>
+                                <p class="text-xs text-slate-400 uppercase tracking-widest">Verified Buyer — London</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Controls -->
+                <div
+                    class="absolute bottom-10 left-1/2 -translate-x-1/2 md:left-16 md:translate-x-0 flex items-center gap-6">
+                    <button onclick="changeTestimonial(-1)"
+                        class="w-12 h-12 rounded-full border border-slate-100 flex items-center justify-center hover:bg-slate-900 hover:text-white transition-all">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M15 18l-6-6 6-6" />
+                        </svg>
+                    </button>
+                    <div class="flex gap-2">
+                        <span class="dot w-2 h-2 rounded-full bg-slate-900"></span>
+                        <span class="dot w-2 h-2 rounded-full bg-slate-200"></span>
+                    </div>
+                    <button onclick="changeTestimonial(1)"
+                        class="w-12 h-12 rounded-full border border-slate-100 flex items-center justify-center hover:bg-slate-900 hover:text-white transition-all">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M9 18l6-6-6-6" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- [NEW] Blog Highlights Section -->
+    <section id="journal" class="py-24 bg-[#F9F8F6] sans">
+        <div class="max-w-7xl mx-auto px-6">
+
+            <!-- Header -->
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+                <div class="max-w-xl">
+                    <span class="text-teal-800 text-[10px] font-bold uppercase tracking-[0.4em] mb-4 block">The
+                        Journal</span>
+                    <h2 class="text-4xl md:text-5xl serif text-slate-900">Visual <span
+                            class="italic text-slate-400">Perspectives</span></h2>
+                </div>
+                <a href="#"
+                    class="text-[10px] uppercase font-bold tracking-widest border-b border-slate-900 pb-1 hover:text-teal-800 hover:border-teal-800 transition-colors">View
+                    All Articles</a>
+            </div>
+
+            <!-- Journal Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <!-- Article 1 -->
+                <div class="group cursor-pointer">
+                    <div class="relative aspect-[16/10] mb-6 overflow-hidden rounded-xl">
+                        <!-- Category Tag -->
+                        <span
+                            class="absolute top-4 left-4 z-10 bg-white/90 backdrop-blur-md px-3 py-1 text-[8px] font-bold uppercase tracking-widest rounded-full">Heritage</span>
+                        <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=800"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                            alt="Article">
+                        <div
+                            class="absolute inset-0 bg-slate-900/0 group-hover:bg-slate-900/10 transition-colors duration-500">
+                        </div>
+                    </div>
+                    <div class="px-2">
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="text-[9px] font-bold uppercase tracking-widest text-slate-400">April 12,
+                                2026</span>
+                            <span class="w-4 h-[1px] bg-slate-200"></span>
+                            <span class="text-[9px] font-bold uppercase tracking-widest text-slate-400">5 Min
+                                Read</span>
+                        </div>
+                        <h3
+                            class="serif text-2xl text-slate-900 leading-snug group-hover:text-teal-800 transition-colors mb-4">
+                            The History of Italian Frame Crafting</h3>
+                        <p class="text-sm text-slate-500 line-clamp-2 leading-relaxed">Exploring the multi-generational
+                            workshops of Belluno, where every curve is a testament to history.</p>
+                    </div>
+                </div>
+
+                <!-- Article 2 -->
+                <div class="group cursor-pointer">
+                    <div class="relative aspect-[16/10] mb-6 overflow-hidden rounded-xl">
+                        <span
+                            class="absolute top-4 left-4 z-10 bg-white/90 backdrop-blur-md px-3 py-1 text-[8px] font-bold uppercase tracking-widest rounded-full">Guide</span>
+                        <img src="https://images.unsplash.com/photo-1512446816042-444d641267d4?auto=format&fit=crop&q=80&w=800"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                            alt="Article">
+                        <div
+                            class="absolute inset-0 bg-slate-900/0 group-hover:bg-slate-900/10 transition-colors duration-500">
+                        </div>
+                    </div>
+                    <div class="px-2">
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="text-[9px] font-bold uppercase tracking-widest text-slate-400">March 28,
+                                2026</span>
+                            <span class="w-4 h-[1px] bg-slate-200"></span>
+                            <span class="text-[9px] font-bold uppercase tracking-widest text-slate-400">8 Min
+                                Read</span>
+                        </div>
+                        <h3
+                            class="serif text-2xl text-slate-900 leading-snug group-hover:text-teal-800 transition-colors mb-4">
+                            Choosing the Right Frame for Your Face</h3>
+                        <p class="text-sm text-slate-500 line-clamp-2 leading-relaxed">A master optician’s guide to
+                            geometric balance and finding your signature aesthetic.</p>
+                    </div>
+                </div>
+
+                <!-- Article 3 -->
+                <div class="group cursor-pointer">
+                    <div class="relative aspect-[16/10] mb-6 overflow-hidden rounded-xl">
+                        <span
+                            class="absolute top-4 left-4 z-10 bg-white/90 backdrop-blur-md px-3 py-1 text-[8px] font-bold uppercase tracking-widest rounded-full">Tech</span>
+                        <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&q=80&w=800"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                            alt="Article">
+                        <div
+                            class="absolute inset-0 bg-slate-900/0 group-hover:bg-slate-900/10 transition-colors duration-500">
+                        </div>
+                    </div>
+                    <div class="px-2">
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="text-[9px] font-bold uppercase tracking-widest text-slate-400">Feb 15,
+                                2026</span>
+                            <span class="w-4 h-[1px] bg-slate-200"></span>
+                            <span class="text-[9px] font-bold uppercase tracking-widest text-slate-400">4 Min
+                                Read</span>
+                        </div>
+                        <h3
+                            class="serif text-2xl text-slate-900 leading-snug group-hover:text-teal-800 transition-colors mb-4">
+                            Future of Lens Tech: HD Visual Engine</h3>
+                        <p class="text-sm text-slate-500 line-clamp-2 leading-relaxed">How proprietary digital surfacing
+                            is achieving 0.01D precision in every single lens.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-24 bg-white sans">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+
+                <!-- Left Side: Title & Contact -->
+                <div class="lg:col-span-5">
+                    <span
+                        class="text-teal-800 text-[10px] font-bold uppercase tracking-[0.4em] mb-4 block">Concierge</span>
+                    <h2 class="text-4xl md:text-5xl serif text-slate-900 leading-tight mb-8">Inquiries & <br><span
+                            class="italic text-slate-400">Assistance</span></h2>
+                    <p class="text-slate-500 mb-10 max-w-sm leading-relaxed">Can't find what you're looking for? Our
+                        boutique specialists are available for digital consultations.</p>
+
+                    <a href="#" class="inline-flex items-center gap-4 group">
+                        <div
+                            class="w-12 h-12 rounded-full border border-slate-200 flex items-center justify-center group-hover:bg-slate-900 group-hover:text-white transition-all">
+                            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"
+                                viewBox="0 0 24 24">
+                                <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2v10z" />
+                            </svg>
+                        </div>
+                        <span class="text-[11px] font-bold uppercase tracking-widest">Contact Support</span>
+                    </a>
+                </div>
+
+                <!-- Right Side: Clean Accordion -->
+                <div class="lg:col-span-7 space-y-4">
+
+                    <details class="group border-b border-slate-100 pb-4 cursor-pointer">
+                        <summary class="flex justify-between items-center list-none py-4">
+                            <span class="text-xs md:text-sm font-bold uppercase tracking-[0.2em] text-slate-900">How
+                                long does production take?</span>
+                            <div class="relative w-4 h-4">
+                                <div class="absolute w-full h-[1.5px] bg-slate-900 top-1/2 -translate-y-1/2"></div>
+                                <div
+                                    class="absolute h-full w-[1.5px] bg-slate-900 left-1/2 -translate-x-1/2 group-open:rotate-90 transition-transform duration-300">
+                                </div>
+                            </div>
+                        </summary>
+                        <div class="overflow-hidden">
+                            <p class="pb-6 text-sm text-slate-500 leading-relaxed max-w-xl">
+                                Our hand-finished frames typically take 7-10 business days. This includes digital
+                                surfacing of your custom lenses and a 12-point quality inspection.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details class="group border-b border-slate-100 pb-4 cursor-pointer">
+                        <summary class="flex justify-between items-center list-none py-4">
+                            <span class="text-xs md:text-sm font-bold uppercase tracking-[0.2em] text-slate-900">Do you
+                                accept insurance?</span>
+                            <div class="relative w-4 h-4">
+                                <div class="absolute w-full h-[1.5px] bg-slate-900 top-1/2 -translate-y-1/2"></div>
+                                <div
+                                    class="absolute h-full w-[1.5px] bg-slate-900 left-1/2 -translate-x-1/2 group-open:rotate-90 transition-transform duration-300">
+                                </div>
+                            </div>
+                        </summary>
+                        <div class="overflow-hidden">
+                            <p class="pb-6 text-sm text-slate-500 leading-relaxed max-w-xl">
+                                While we do not bill insurance directly, we provide a detailed medical receipt suitable
+                                for out-of-network reimbursement from all major providers.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details class="group border-b border-slate-100 pb-4 cursor-pointer">
+                        <summary class="flex justify-between items-center list-none py-4">
+                            <span class="text-xs md:text-sm font-bold uppercase tracking-[0.2em] text-slate-900">Can I
+                                book a virtual styling?</span>
+                            <div class="relative w-4 h-4">
+                                <div class="absolute w-full h-[1.5px] bg-slate-900 top-1/2 -translate-y-1/2"></div>
+                                <div
+                                    class="absolute h-full w-[1.5px] bg-slate-900 left-1/2 -translate-x-1/2 group-open:rotate-90 transition-transform duration-300">
+                                </div>
+                            </div>
+                        </summary>
+                        <div class="overflow-hidden">
+                            <p class="pb-6 text-sm text-slate-500 leading-relaxed max-w-xl">
+                                Yes. Our master opticians offer 20-minute video consultations to analyze face shape and
+                                recommend frames that suit your personal style and prescription.
+                            </p>
+                        </div>
+                    </details>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Load Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .serif {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .sans {
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Custom Image Reveal */
+        .atelier-card img {
+            filter: grayscale(100%) brightness(0.7);
+            transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .atelier-card:hover img {
+            filter: grayscale(0%) brightness(0.5);
+            transform: scale(1.1);
+        }
+    </style>
+
+    <section id="contact" class="py-24 bg-[#FAF9F6] sans overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+
+            <!-- Header -->
+            <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+                <div class="max-w-xl">
+                    <span class="text-teal-800 text-[10px] font-bold uppercase tracking-[0.5em] mb-4 block">Physical
+                        Presence</span>
+                    <h2 class="text-5xl md:text-7xl serif text-slate-900 leading-none">Global <span
+                            class="italic text-slate-400">Ateliers.</span></h2>
+                </div>
+                <p class="text-slate-500 max-w-xs text-sm leading-relaxed mb-2">
+                    Experience the collection in person. Our ateliers offer bespoke fittings and private consultations.
+                </p>
+            </div>
+
+            <!-- Ateliers Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-4">
+
+                <!-- NYC -->
+                <div
+                    class="atelier-card group relative h-[500px] md:h-[600px] overflow-hidden rounded-3xl bg-slate-900">
+                    <img src="https://images.unsplash.com/photo-1485871981521-5b1fd3805eee?auto=format&fit=crop&q=80&w=1000"
+                        class="absolute inset-0 w-full h-full object-cover" alt="New York">
+
+                    <!-- Content Overlay -->
+                    <div class="absolute inset-0 flex flex-col justify-between p-8 md:p-12 z-10">
+                        <div class="flex justify-between items-start">
+                            <span class="text-white/50 text-[10px] font-bold uppercase tracking-[0.3em]">01</span>
+                            <div
+                                class="bg-white/10 backdrop-blur-md rounded-full p-3 border border-white/20 text-white">
+                                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"
+                                    viewBox="0 0 24 24">
+                                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div
+                            class="transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
+                            <h3 class="text-3xl serif text-white mb-2">New York City</h3>
+                            <p class="text-white/60 text-xs uppercase tracking-widest mb-6">SoHo Flagship Store</p>
+
+                            <div
+                                class="space-y-4 opacity-0 group-hover:opacity-100 transition-opacity duration-700 delay-100">
+                                <p class="text-white/80 text-sm font-light">122 Wooster St, Manhattan, NY 10012</p>
+                                <div class="flex flex-col gap-2">
+                                    <a href="tel:+12125550192"
+                                        class="text-white text-xs font-bold hover:text-teal-400 transition-colors uppercase tracking-widest">+1
+                                        (212) 555-0192</a>
+                                    <button
+                                        class="w-full mt-4 bg-white text-slate-900 py-4 text-[10px] font-bold uppercase tracking-widest rounded-xl hover:bg-teal-50 transition-colors">Book
+                                        Appointment</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LONDON -->
+                <div
+                    class="atelier-card group relative h-[500px] md:h-[600px] overflow-hidden rounded-3xl bg-slate-900">
+                    <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&q=80&w=1000"
+                        class="absolute inset-0 w-full h-full object-cover" alt="London">
+
+                    <div class="absolute inset-0 flex flex-col justify-between p-8 md:p-12 z-10">
+                        <div class="flex justify-between items-start">
+                            <span class="text-white/50 text-[10px] font-bold uppercase tracking-[0.3em]">02</span>
+                            <div
+                                class="bg-white/10 backdrop-blur-md rounded-full p-3 border border-white/20 text-white">
+                                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"
+                                    viewBox="0 0 24 24">
+                                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div
+                            class="transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
+                            <h3 class="text-3xl serif text-white mb-2">London</h3>
+                            <p class="text-white/60 text-xs uppercase tracking-widest mb-6">Marylebone Village</p>
+
+                            <div
+                                class="space-y-4 opacity-0 group-hover:opacity-100 transition-opacity duration-700 delay-100">
+                                <p class="text-white/80 text-sm font-light">45 Marylebone High St, London, W1U 5HG</p>
+                                <div class="flex flex-col gap-2">
+                                    <a href="tel:+442079460012"
+                                        class="text-white text-xs font-bold hover:text-teal-400 transition-colors uppercase tracking-widest">+44
+                                        20 7946 0012</a>
+                                    <button
+                                        class="w-full mt-4 bg-white text-slate-900 py-4 text-[10px] font-bold uppercase tracking-widest rounded-xl hover:bg-teal-50 transition-colors">Book
+                                        Appointment</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MILAN -->
+                <div
+                    class="atelier-card group relative h-[500px] md:h-[600px] overflow-hidden rounded-3xl bg-slate-900">
+                    <img src="https://images.unsplash.com/photo-1520118331167-83d137dfacc7?auto=format&fit=crop&q=80&w=1000"
+                        class="absolute inset-0 w-full h-full object-cover" alt="Milan">
+
+                    <div class="absolute inset-0 flex flex-col justify-between p-8 md:p-12 z-10">
+                        <div class="flex justify-between items-start">
+                            <span class="text-white/50 text-[10px] font-bold uppercase tracking-[0.3em]">03</span>
+                            <div
+                                class="bg-white/10 backdrop-blur-md rounded-full p-3 border border-white/20 text-white">
+                                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"
+                                    viewBox="0 0 24 24">
+                                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div
+                            class="transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
+                            <h3 class="text-3xl serif text-white mb-2">Milan</h3>
+                            <p class="text-white/60 text-xs uppercase tracking-widest mb-6">Quadrilatero d'Oro</p>
+
+                            <div
+                                class="space-y-4 opacity-0 group-hover:opacity-100 transition-opacity duration-700 delay-100">
+                                <p class="text-white/80 text-sm font-light">Via della Spiga, 26, 20121 Milano, Italy</p>
+                                <div class="flex flex-col gap-2">
+                                    <a href="tel:+39021234567"
+                                        class="text-white text-xs font-bold hover:text-teal-400 transition-colors uppercase tracking-widest">+39
+                                        02 123 4567</a>
+                                    <button
+                                        class="w-full mt-4 bg-white text-slate-900 py-4 text-[10px] font-bold uppercase tracking-widest rounded-xl hover:bg-teal-50 transition-colors">Book
+                                        Appointment</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="relative bg-zinc-950 text-zinc-300  pb-12 overflow-hidden">
+
+        <!-- Fixed Wave Separator -->
+        <div class="absolute top-0 left-0 w-full overflow-hidden leading-[0]">
+            <div class="animate-wave w-[200%] md:w-[150%]">
+                <svg class="relative block w-full h-[80px] md:h-[120px]" viewBox="0 0 1440 120"
+                    preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0,0 C200,100 400,0 600,60 C800,120 1000,0 1200,60 C1400,120 1600,0 1800,60 L1800,0 L0,0 Z"
+                        fill="#FBFBFA"></path>
+                </svg>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10 mt-10">
+
+            <!-- [NEW SECTION] Stay Growing With Us Banner -->
+            <div
+                class="mb-20 bg-zinc-900/40 border border-zinc-800 rounded-[2.5rem] p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8 shadow-2xl backdrop-blur-sm">
+                <div class="text-center md:text-left">
+                    <h3 class="text-3xl md:text-4xl serif text-white mb-3">Stay Growing With Us</h3>
+                    <p class="text-zinc-500 text-sm max-w-md leading-relaxed">
+                        Join our newsletter for the latest in architectural frame design and vision health updates.
+                    </p>
+                </div>
+                <form
+                    class="w-full max-w-md flex bg-zinc-950/50 border border-zinc-800 rounded-full p-1 focus-within:border-emerald-500/50 transition-all duration-500">
+                    <input type="email" placeholder="Enter your email"
+                        class="bg-transparent flex-1 px-6 py-3 text-xs outline-none placeholder:text-zinc-600 text-zinc-300">
+                    <button
+                        class="bg-emerald-500 text-zinc-950 px-8 py-3 rounded-full text-[10px] uppercase font-black tracking-widest hover:bg-emerald-400 transition-all duration-300">
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 mb-20">
+
+                <!-- Brand Column -->
+                <div class="lg:col-span-4">
+                    <div class="text-3xl font-light tracking-tighter text-white mb-6 uppercase">
+                        Lumina <span class="font-extrabold text-emerald-500 italic">Optique</span>
+                    </div>
+                    <p class="text-zinc-400 text-sm leading-relaxed mb-8 max-w-xs">
+                        Redefining the art of vision through architectural precision and avant-garde aesthetics.
+                    </p>
+                    <div class="flex space-x-5">
+                        <a href="#"
+                            class="group flex items-center justify-center w-10 h-10 border border-zinc-800 rounded-full hover:border-emerald-500 transition-all duration-500">
+                            <span
+                                class="text-[10px] group-hover:text-emerald-500 uppercase font-bold tracking-widest">Ig</span>
+                        </a>
+                        <a href="#"
+                            class="group flex items-center justify-center w-10 h-10 border border-zinc-800 rounded-full hover:border-emerald-500 transition-all duration-500">
+                            <span
+                                class="text-[10px] group-hover:text-emerald-500 uppercase font-bold tracking-widest">Tw</span>
+                        </a>
+                        <a href="#"
+                            class="group flex items-center justify-center w-10 h-10 border border-zinc-800 rounded-full hover:border-emerald-500 transition-all duration-500">
+                            <span
+                                class="text-[10px] group-hover:text-emerald-500 uppercase font-bold tracking-widest">Fb</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Links Columns -->
+                <div class="lg:col-span-2">
+                    <h4 class="text-white text-[11px] uppercase tracking-[0.2em] font-bold mb-8">Collection</h4>
+                    <ul class="space-y-4 text-sm font-medium">
+                        <li><a href="#" class="hover:text-emerald-400 transition-colors duration-300">Home</a>
+                        </li>
+                        <li><a href="#" class="hover:text-emerald-400 transition-colors duration-300">About Us</a>
+                        </li>
+                        <li><a href="#" class="hover:text-emerald-400 transition-colors duration-300">Products</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="lg:col-span-2">
+                    <h4 class="text-white text-[11px] uppercase tracking-[0.2em] font-bold mb-8">The Studio</h4>
+                    <ul class="space-y-4 text-sm font-medium">
+                        <li><a href="#" class="hover:text-emerald-400 transition-colors duration-300">Our Heritage</a>
+                        </li>
+                        <li><a href="#" class="hover:text-emerald-400 transition-colors duration-300">Eye Health</a>
+                        </li>
+                        <li><a href="#" class="hover:text-emerald-400 transition-colors duration-300">Concierge</a></li>
+                    </ul>
+                </div>
+
+                <!-- Direct Support Column -->
+                <div class="lg:col-span-4">
+                    <h4 class="text-white text-[11px] uppercase tracking-[0.2em] font-bold mb-8">Direct Support</h4>
+
+                    <div class="space-y-6">
+                        <p class="text-zinc-500 text-xs leading-relaxed">
+                            Have questions? Reach us at:
+                        </p>
+
+                        <a href="tel:+919106627276" class="block group">
+                            <span
+                                class="text-2xl md:text-3xl font-bold text-emerald-500 tracking-tighter group-hover:text-emerald-400 transition-colors duration-300">
+                                +91 91066 27276
+                            </span>
+                            <!-- Decorative underline that grows on hover -->
+                            <div
+                                class="w-12 h-[2px] bg-emerald-500/30 mt-1 group-hover:w-24 transition-all duration-500">
+                            </div>
+                        </a>
+
+                        <div class="flex items-center gap-3 text-zinc-500">
+                            <!-- Simple Clock Icon -->
+                            <svg class="w-4 h-4 text-emerald-500/50" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <span class="text-[10px] uppercase tracking-[0.15em] font-medium">
+                                Mon - Sat: 9:00 AM - 6:00 PM
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div
+                class="pt-10 border-t border-zinc-900 flex flex-col md:flex-row justify-between items-center text-[10px] uppercase tracking-[0.3em] text-zinc-600">
+                <div class="mb-4 md:mb-0">
+                    &copy; 2026 <span class="text-zinc-400">Lumina Optique</span> — All Rights Reserved.
+                </div>
+                <div class="flex space-x-8">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Aesthetic Ambient Light -->
+        <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-emerald-500/5 rounded-full blur-[120px]"></div>
+        <div class="absolute -top-24 -right-24 w-96 h-96 bg-emerald-500/5 rounded-full blur-[120px]"></div>
+
+    </footer>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
