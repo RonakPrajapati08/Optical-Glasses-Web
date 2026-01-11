@@ -28,28 +28,80 @@
     </div>
 
     <!-- Navigation -->
+    <!-- Navigation (Your existing UI) -->
     <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-stone-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <div class="text-2xl font-semibold tracking-tighter serif uppercase">Lumina <span
                         class="font-light text-slate-400">Optique</span></div>
-                <div class="hidden md:flex space-x-8 items-center text-[11px] uppercase tracking-widest font-medium">
-                    <a href="./index.html"
-                        class="hover:text-teal-700 text-teal-700 transition border-b border-teal-700">Home</a>
-                    <a href="./about.html" class="hover:text-teal-700 transition">About</a>
+
+                <!-- Desktop Links -->
+                <div class="hidden lg:flex space-x-8 items-center text-[11px] uppercase tracking-widest font-medium">
+                    <a href="./index.html" class="hover:text-teal-700 transition">Home</a>
+                    <a href="./about.html" class="text-teal-700 transition border-b border-teal-700">About</a>
                     <a href="./products.html" class="hover:text-teal-700 transition">Products</a>
                     <a href="./service.html" class="hover:text-teal-700 transition">Services</a>
                     <a href="./contact-us.html" class="hover:text-teal-700 transition">Contact</a>
                 </div>
-                <div>
+
+                <div class="flex items-center space-x-4">
                     <button onclick="toggleBookingModal()"
-                        class="border border-slate-900 px-6 py-2 text-[10px] uppercase tracking-widest hover:bg-slate-900 hover:text-white transition-all duration-300">
+                        class="hidden sm:block border border-slate-900 px-6 py-2 text-[10px] uppercase tracking-widest hover:bg-slate-900 hover:text-white transition-all duration-300">
                         Book Exam
+                    </button>
+
+                    <!-- IMPROVED MOBILE TOGGLE -->
+                    <button onclick="toggleMobileMenu()"
+                        class="lg:hidden relative z-[70] w-10 h-10 flex items-center justify-center focus:outline-none">
+                        <div id="hamburger" class="relative w-6 h-5">
+                            <span
+                                class="absolute block h-0.5 w-6 bg-slate-900 transform transition duration-500 ease-in-out top-0"></span>
+                            <span
+                                class="absolute block h-0.5 w-6 bg-slate-900 transform transition duration-500 ease-in-out top-2"></span>
+                            <span
+                                class="absolute block h-0.5 w-6 bg-slate-900 transform transition duration-500 ease-in-out top-4"></span>
+                        </div>
                     </button>
                 </div>
             </div>
         </div>
     </nav>
+
+    <!-- LUXURY MOBILE MENU OVERLAY -->
+    <div id="mobile-menu-overlay"
+        class="fixed inset-0 z-[60] bg-white/95 backdrop-blur-xl opacity-0 pointer-events-none transition-all duration-500 ease-in-out">
+        <!-- Close Button -->
+        <button id="mobile-close-btn" onclick="toggleMobileMenu()"
+            class="absolute top-6 right-6 text-teal text-4xl font-light opacity-0 scale-75 transition-all duration-300">
+            &times;
+        </button>
+
+        <div class="flex flex-col h-full justify-center px-12 space-y-8">
+            <!-- Staggered Links -->
+            <div class="mobile-link opacity-0 translate-y-4 transition-all duration-700 delay-[100ms]">
+                <a href="./index.html" class="text-3xl serif italic text-slate-900">The Home</a>
+            </div>
+            <div class="mobile-link opacity-0 translate-y-4 transition-all duration-700 delay-[200ms]">
+                <a href="./about.html" class="text-3xl serif italic text-slate-900">Our Story</a>
+            </div>
+            <div class="mobile-link opacity-0 translate-y-4 transition-all duration-700 delay-[300ms]">
+                <a href="./products.html" class="text-3xl serif italic text-slate-900">Collections</a>
+            </div>
+            <div class="mobile-link opacity-0 translate-y-4 transition-all duration-700 delay-[400ms]">
+                <a href="./service.html" class="text-3xl serif italic text-slate-900">Services</a>
+            </div>
+            <div class="mobile-link opacity-0 translate-y-4 transition-all duration-700 delay-[500ms]">
+                <a href="./contact-us.html" class="text-3xl serif italic text-slate-900">Contact</a>
+            </div>
+
+            <div class="pt-10 mobile-link opacity-0 translate-y-4 transition-all duration-700 delay-[600ms]">
+                <button onclick="toggleBookingModal(); toggleMobileMenu();"
+                    class="bg-slate-900 text-white px-8 py-4 text-[10px] uppercase tracking-[0.3em] font-bold rounded-full">
+                    Book Private Exam
+                </button>
+            </div>
+        </div>
+    </div>
 
     <section id="hero" class="relative h-screen w-full bg-[#FBFBFA] overflow-hidden sans">
 

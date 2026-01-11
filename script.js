@@ -1,3 +1,61 @@
+//toggle
+function toggleMobileMenu() {
+    const overlay = document.getElementById('mobile-menu-overlay');
+    const hamburgerLines = document.querySelectorAll('#hamburger span');
+    const links = document.querySelectorAll('.mobile-link');
+    const closeBtn = document.getElementById('mobile-close-btn');
+
+    const isOpening = overlay.classList.contains('opacity-0');
+
+    if (isOpening) {
+        // SHOW OVERLAY
+        overlay.classList.remove('opacity-0', 'pointer-events-none');
+        overlay.classList.add('opacity-100', 'pointer-events-auto');
+
+        // HAMBURGER → X
+        hamburgerLines[0].classList.add('rotate-45', 'translate-y-[8px]');
+        hamburgerLines[1].classList.add('opacity-0');
+        hamburgerLines[2].classList.add('-rotate-45', 'translate-y-[-8px]');
+
+        // LINKS ANIMATION
+        links.forEach((link, i) => {
+            setTimeout(() => {
+                link.classList.remove('opacity-0', 'translate-y-4');
+                link.classList.add('opacity-100', 'translate-y-0');
+            }, i * 80);
+        });
+
+        // CLOSE BUTTON SHOW
+        closeBtn.classList.remove('opacity-0', 'scale-75');
+        closeBtn.classList.add('opacity-100', 'scale-100');
+
+        document.body.style.overflow = 'hidden';
+    } else {
+        // HIDE LINKS
+        links.forEach(link => {
+            link.classList.add('opacity-0', 'translate-y-4');
+            link.classList.remove('opacity-100', 'translate-y-0');
+        });
+
+        // X → HAMBURGER
+        hamburgerLines[0].classList.remove('rotate-45', 'translate-y-[8px]');
+        hamburgerLines[1].classList.remove('opacity-0');
+        hamburgerLines[2].classList.remove('-rotate-45', 'translate-y-[-8px]');
+
+        // CLOSE BUTTON HIDE
+        closeBtn.classList.add('opacity-0', 'scale-75');
+        closeBtn.classList.remove('opacity-100', 'scale-100');
+
+        // HIDE OVERLAY
+        setTimeout(() => {
+            overlay.classList.add('opacity-0', 'pointer-events-none');
+            overlay.classList.remove('opacity-100', 'pointer-events-auto');
+            document.body.style.overflow = 'auto';
+        }, 400);
+    }
+}
+
+
 //hero slider
 let current = 0;
 const slides = document.querySelectorAll(".slide");
