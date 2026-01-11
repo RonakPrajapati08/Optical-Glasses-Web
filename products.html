@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | Lumina Optique</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body class="bg-stone-50 text-slate-900">
+
+    <!-- [NEW] Top Announcement Bar (Offers / Free Eye Test) -->
+    <div
+        class="bg-zinc-950 text-white py-2 text-[9px] uppercase tracking-[0.4em] text-center font-bold relative z-[60]">
+        Complimentary Eye Exam with every Bespoke Frame — <a href="#"
+            class="underline decoration-teal-500 underline-offset-4">Book Yours</a>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-stone-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="text-2xl font-semibold tracking-tighter serif uppercase">Lumina <span
+                        class="font-light text-slate-400">Optique</span></div>
+                <div class="hidden md:flex space-x-8 items-center text-[11px] uppercase tracking-widest font-medium">
+                    <a href="./index.html" class="hover:text-teal-700 transition">Home</a>
+                    <a href="./about.html" class="hover:text-teal-700 transition ">About</a>
+                    <a href="./products.html" class="text-teal-700 transition border-b border-teal-700">Products</a>
+                    <a href="./service.html" class="hover:text-teal-700 transition">Services</a>
+                    <a href="./contact-us.html" class="hover:text-teal-700 transition">Contact</a>
+                </div>
+                <div>
+                    <button onclick="toggleBookingModal()"
+                        class="border border-slate-900 px-6 py-2 text-[10px] uppercase tracking-widest hover:bg-slate-900 hover:text-white transition-all duration-300">
+                        Book Exam
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative h-[60vh] flex items-center justify-center overflow-hidden">
+        <!-- Replace with your actual hero image -->
+        <img src="https://images.unsplash.com/photo-1574258495973-f010dfbb5371?q=80&w=2070&auto=format&fit=crop"
+            alt="Hero Banner" class="absolute inset-0 w-full h-full object-cover brightness-[0.85]">
+
+        <div class="relative z-10 text-center text-white">
+            <p class="uppercase tracking-[0.4em] text-xs mb-4 opacity-90">— THE 2026 COLLECTION —</p>
+            <h1 class="serif text-5xl md:text-7xl italic font-light">New <span class="font-normal">Perspectives</span>
+            </h1>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+
+        <div class="flex flex-col lg:flex-row gap-10">
+
+            <!-- 1. ASIDE FILTER BAR (Desktop) -->
+            <aside class="hidden lg:block w-64 flex-shrink-0 space-y-8 border-r border-slate-100 pr-8">
+                <div>
+                    <h3 class="text-[11px] font-bold uppercase tracking-[0.2em] text-slate-900 mb-6">Collections</h3>
+                    <div class="space-y-3">
+                        <label class="flex items-center group cursor-pointer">
+                            <input type="checkbox" class="w-4 h-4 border-slate-300 rounded text-slate-900 focus:ring-0">
+                            <span
+                                class="ml-3 text-xs text-slate-600 group-hover:text-slate-900 transition-colors">Optical
+                                Frames</span>
+                        </label>
+                        <label class="flex items-center group cursor-pointer">
+                            <input type="checkbox" class="w-4 h-4 border-slate-300 rounded text-slate-900 focus:ring-0"
+                                checked>
+                            <span class="ml-3 text-xs text-slate-900 font-medium">Sunglasses</span>
+                        </label>
+                        <label class="flex items-center group cursor-pointer">
+                            <input type="checkbox" class="w-4 h-4 border-slate-300 rounded text-slate-900 focus:ring-0">
+                            <span
+                                class="ml-3 text-xs text-slate-600 group-hover:text-slate-900 transition-colors">Limited
+                                Edition</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="pt-6 border-t border-slate-100">
+                    <h3 class="text-[11px] font-bold uppercase tracking-[0.2em] text-slate-900 mb-6">Frame Color</h3>
+                    <div class="grid grid-cols-5 gap-3">
+                        <button aria-label="buttom"
+                            class="w-6 h-6 rounded-full bg-black ring-1 ring-offset-2 ring-slate-900"></button>
+                        <button aria-label="buttom" class="w-6 h-6 rounded-full bg-amber-900"></button>
+                        <button aria-label="buttom"
+                            class="w-6 h-6 rounded-full bg-slate-200 border border-slate-200"></button>
+                        <button aria-label="buttom" class="w-6 h-6 rounded-full bg-emerald-900"></button>
+                        <button aria-label="buttom" class="w-6 h-6 rounded-full bg-blue-900"></button>
+                    </div>
+                </div>
+
+                <div class="pt-6 border-t border-slate-100">
+                    <h3 class="text-[11px] font-bold uppercase tracking-[0.2em] text-slate-900 mb-6">Price Range</h3>
+                    <div class="space-y-3">
+                        <label class="flex items-center cursor-pointer">
+                            <input type="radio" name="price" class="w-4 h-4 text-slate-900 focus:ring-0">
+                            <span class="ml-3 text-xs text-slate-600">Under ₹15,000</span>
+                        </label>
+                        <label class="flex items-center cursor-pointer">
+                            <input type="radio" name="price" class="w-4 h-4 text-slate-900 focus:ring-0">
+                            <span class="ml-3 text-xs text-slate-600">₹15,000 - ₹25,000</span>
+                        </label>
+                        <label class="flex items-center cursor-pointer">
+                            <input type="radio" name="price" class="w-4 h-4 text-slate-900 focus:ring-0">
+                            <span class="ml-3 text-xs text-slate-600">₹25,000 +</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="pt-6 border-t border-slate-100">
+                    <h3 class="text-[11px] font-bold uppercase tracking-[0.2em] text-slate-900 mb-6">Shape</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <button
+                            class="px-3 py-1.5 border border-slate-200 rounded text-[10px] uppercase font-bold text-slate-600 hover:border-slate-900 transition-all">Aviator</button>
+                        <button
+                            class="px-3 py-1.5 border border-slate-900 rounded text-[10px] uppercase font-bold text-slate-900">Round</button>
+                        <button
+                            class="px-3 py-1.5 border border-slate-200 rounded text-[10px] uppercase font-bold text-slate-600 hover:border-slate-900 transition-all">Square</button>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- 2. PRODUCT SECTION -->
+            <div class="flex-1">
+
+                <!-- Mobile Filter Trigger & Sorting Bar -->
+                <div class="flex justify-between items-center mb-8 pb-4 border-b border-slate-100">
+                    <!-- Mobile Filter Button (Only shows on mobile) -->
+                    <button
+                        class="lg:hidden flex items-center space-x-2 text-[10px] font-bold uppercase tracking-widest border border-slate-200 px-4 py-2 rounded-md">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M4 6h16M4 12h10M4 18h7" />
+                        </svg>
+                        <span>Filters</span>
+                    </button>
+
+                    <div class="hidden lg:block text-[10px] uppercase tracking-widest text-slate-400 font-bold">
+                        8 Models found
+                    </div>
+
+                    <div class="flex items-center space-x-4">
+                        <span class="text-[10px] uppercase tracking-widest text-slate-400 font-bold">Sort by:</span>
+                        <select
+                            class="text-[10px] uppercase tracking-widest font-bold border-none bg-transparent focus:ring-0 cursor-pointer">
+                            <option>Newest</option>
+                            <option>Price: Low to High</option>
+                            <option>Price: High to Low</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- PRODUCT GRID (Inject the 8 cards here) -->
+                <div class="grid grid-cols-2 xs:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6">
+
+                    <!-- Product Grid -->
+                    <!-- <div class="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6"> -->
+
+                    <!-- Card 1: The Artisan -->
+                    <div
+                        class="group product-card bg-white p-2 md:p-3 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition-all duration-300">
+                        <a href="./product-detail.html">
+                            <div class="relative aspect-[4/5] overflow-hidden bg-[#F9F9F9] rounded-lg mb-4">
+                                <div class="absolute top-2 left-2 z-20">
+                                    <span
+                                        class="bg-slate-900 text-white px-2 py-1 text-[7px] md:text-[9px] font-bold uppercase tracking-widest rounded-sm shadow-sm">New
+                                        Arrival</span>
+                                </div>
+                                <button
+                                    class="absolute top-2 right-2 z-20 w-8 h-8 flex items-center justify-center bg-white/80 backdrop-blur-sm rounded-full text-slate-400 hover:text-red-500 transition-colors shadow-sm">
+                                    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+                                        viewBox="0 0 24 24">
+                                        <path
+                                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                                    </svg>
+                                </button>
+                                <div class="w-full h-full relative p-4">
+                                    <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&q=80&w=800"
+                                        class="primary-img absolute inset-0 w-full h-full object-contain p-6 transition-opacity duration-700">
+                                    <img src="https://images.unsplash.com/photo-1577174881658-0f30ed549adc?auto=format&fit=crop&q=80&w=800"
+                                        class="secondary-img absolute inset-0 w-full h-full object-contain p-6">
+                                </div>
+                                <div
+                                    class="hidden md:flex absolute bottom-0 left-0 w-full p-2 translate-y-full group-hover:translate-y-0 transition-transform duration-500 z-30">
+                                    <button
+                                        class="w-full bg-slate-900 text-white py-3 text-[10px] font-bold uppercase tracking-widest rounded-md hover:bg-black transition-colors">Add
+                                        To Bag</button>
+                                </div>
+                            </div>
+                            <div class="px-1 pb-2">
+                                <div class="flex justify-between items-start">
+                                    <h3
+                                        class="text-[11px] md:text-xs font-bold uppercase tracking-widest text-slate-900 truncate">
+                                        The Artisan</h3>
+                                    <span class="text-[11px] md:text-xs font-bold text-slate-900">₹24,500</span>
+                                </div>
+                                <p class="text-[10px] md:text-[11px] text-slate-500 mt-1 line-clamp-1">Smoked Tortoise
+                                    Frames</p>
+                                <div class="flex gap-1.5 mt-3">
+                                    <div
+                                        class="w-2.5 h-2.5 rounded-full bg-[#4A3728] ring-1 ring-offset-1 ring-slate-900">
+                                    </div>
+                                    <div class="w-2.5 h-2.5 rounded-full bg-black"></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Card 2: Gold Aura -->
+                    <div
+                        class="group product-card bg-white p-2 md:p-3 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition-all duration-300">
+                        <a href="./product-detail.html">
+                            <div class="relative aspect-[4/5] overflow-hidden bg-[#F9F9F9] rounded-lg mb-4">
+                                <div class="absolute top-2 left-2 z-20">
+                                    <span
+                                        class="bg-emerald-800 text-white px-2 py-1 text-[7px] md:text-[9px] font-bold uppercase tracking-widest rounded-sm shadow-sm">Limited</span>
+                                </div>
+                                <button
+                                    class="absolute top-2 right-2 z-20 w-8 h-8 flex items-center justify-center bg-white/80 backdrop-blur-sm rounded-full text-slate-400 hover:text-red-500 transition-colors shadow-sm">
+                                    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+                                        viewBox="0 0 24 24">
+                                        <path
+                                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                                    </svg>
+                                </button>
+                                <div class="w-full h-full relative p-4">
+                                    <img src="https://images.unsplash.com/photo-1511499767350-a1590fdb2817?auto=format&fit=crop&q=80&w=800"
+                                        class="primary-img absolute inset-0 w-full h-full object-contain p-6 transition-opacity duration-700">
+                                    <img src="https://images.unsplash.com/photo-1591076482161-42ce6da69f67?auto=format&fit=crop&q=80&w=800"
+                                        class="secondary-img absolute inset-0 w-full h-full object-contain p-6">
+                                </div>
+                                <div
+                                    class="hidden md:flex absolute bottom-0 left-0 w-full p-2 translate-y-full group-hover:translate-y-0 transition-transform duration-500 z-30">
+                                    <button
+                                        class="w-full bg-slate-900 text-white py-3 text-[10px] font-bold uppercase tracking-widest rounded-md hover:bg-black transition-colors">Add
+                                        To Bag</button>
+                                </div>
+                            </div>
+                            <div class="px-1 pb-2">
+                                <div class="flex justify-between items-start">
+                                    <h3
+                                        class="text-[11px] md:text-xs font-bold uppercase tracking-widest text-slate-900 truncate">
+                                        Gold Aura</h3>
+                                    <span class="text-[11px] md:text-xs font-bold text-slate-900">₹32,000</span>
+                                </div>
+                                <p class="text-[10px] md:text-[11px] text-slate-500 mt-1 line-clamp-1">24k Gold Plated
+                                    Details</p>
+                                <div class="flex gap-1.5 mt-3">
+                                    <div
+                                        class="w-2.5 h-2.5 rounded-full bg-yellow-500 ring-1 ring-offset-1 ring-slate-900">
+                                    </div>
+                                    <div class="w-2.5 h-2.5 rounded-full bg-slate-200"></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Card 3: Shield Elite -->
+                    <div
+                        class="group product-card bg-white p-2 md:p-3 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition-all duration-300">
+                        <a href="./product-detail.html">
+                            <div class="relative aspect-[4/5] overflow-hidden bg-[#F9F9F9] rounded-lg mb-4">
+                                <div class="absolute top-2 left-2 z-20">
+                                    <span
+                                        class="bg-orange-700 text-white px-2 py-1 text-[7px] md:text-[9px] font-bold uppercase tracking-widest rounded-sm shadow-sm">Best
+                                        Seller</span>
+                                </div>
+                                <button
+                                    class="absolute top-2 right-2 z-20 w-8 h-8 flex items-center justify-center bg-white/80 backdrop-blur-sm rounded-full text-slate-400 hover:text-red-500 transition-colors shadow-sm">
+                                    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+                                        viewBox="0 0 24 24">
+                                        <path
+                                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                                    </svg>
+                                </button>
+                                <div class="w-full h-full relative p-4">
+                                    <img src="https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?auto=format&fit=crop&q=80&w=800"
+                                        class="primary-img absolute inset-0 w-full h-full object-contain p-6 transition-opacity duration-700">
+                                    <img src="https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&q=80&w=800"
+                                        class="secondary-img absolute inset-0 w-full h-full object-contain p-6">
+                                </div>
+                                <div
+                                    class="hidden md:flex absolute bottom-0 left-0 w-full p-2 translate-y-full group-hover:translate-y-0 transition-transform duration-500 z-30">
+                                    <button
+                                        class="w-full bg-slate-900 text-white py-3 text-[10px] font-bold uppercase tracking-widest rounded-md hover:bg-black transition-colors">Add
+                                        To Bag</button>
+                                </div>
+                            </div>
+                            <div class="px-1 pb-2">
+                                <div class="flex justify-between items-start">
+                                    <h3
+                                        class="text-[11px] md:text-xs font-bold uppercase tracking-widest text-slate-900 truncate">
+                                        Shield Elite</h3>
+                                    <span class="text-[11px] md:text-xs font-bold text-slate-900">₹18,200</span>
+                                </div>
+                                <p class="text-[10px] md:text-[11px] text-slate-500 mt-1 line-clamp-1">Matte Black
+                                    Polarized</p>
+                                <div class="flex gap-1.5 mt-3">
+                                    <div class="w-2.5 h-2.5 rounded-full bg-black ring-1 ring-offset-1 ring-slate-900">
+                                    </div>
+                                    <div class="w-2.5 h-2.5 rounded-full bg-blue-900"></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Card 4: Lumina Crystal -->
+                    <div
+                        class="group product-card bg-white p-2 md:p-3 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition-all duration-300">
+                        <a href="./product-detail.html">
+                            <div class="relative aspect-[4/5] overflow-hidden bg-[#F9F9F9] rounded-lg mb-4">
+                                <div class="absolute top-2 left-2 z-20">
+                                    <span
+                                        class="bg-slate-900 text-white px-2 py-1 text-[7px] md:text-[9px] font-bold uppercase tracking-widest rounded-sm shadow-sm">New
+                                        Arrival</span>
+                                </div>
+                                <button
+                                    class="absolute top-2 right-2 z-20 w-8 h-8 flex items-center justify-center bg-white/80 backdrop-blur-sm rounded-full text-slate-400 hover:text-red-500 transition-colors shadow-sm">
+                                    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+                                        viewBox="0 0 24 24">
+                                        <path
+                                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                                    </svg>
+                                </button>
+                                <div class="w-full h-full relative p-4">
+                                    <img src="https://images.unsplash.com/photo-1534126511673-b6899657816a?auto=format&fit=crop&q=80&w=800"
+                                        class="primary-img absolute inset-0 w-full h-full object-contain p-6 transition-opacity duration-700">
+                                    <img src="https://images.unsplash.com/photo-1551028150-64b9f398f678?auto=format&fit=crop&q=80&w=800"
+                                        class="secondary-img absolute inset-0 w-full h-full object-contain p-6">
+                                </div>
+                                <div
+                                    class="hidden md:flex absolute bottom-0 left-0 w-full p-2 translate-y-full group-hover:translate-y-0 transition-transform duration-500 z-30">
+                                    <button
+                                        class="w-full bg-slate-900 text-white py-3 text-[10px] font-bold uppercase tracking-widest rounded-md hover:bg-black transition-colors">Add
+                                        To Bag</button>
+                                </div>
+                            </div>
+                            <div class="px-1 pb-2">
+                                <div class="flex justify-between items-start">
+                                    <h3
+                                        class="text-[11px] md:text-xs font-bold uppercase tracking-widest text-slate-900 truncate">
+                                        Lumina Crystal</h3>
+                                    <span class="text-[11px] md:text-xs font-bold text-slate-900">₹21,000</span>
+                                </div>
+                                <p class="text-[10px] md:text-[11px] text-slate-500 mt-1 line-clamp-1">Transparent
+                                    Architectural
+                                    Glass</p>
+                                <div class="flex gap-1.5 mt-3">
+                                    <div
+                                        class="w-2.5 h-2.5 rounded-full bg-slate-100 ring-1 ring-offset-1 ring-slate-900">
+                                    </div>
+                                    <div class="w-2.5 h-2.5 rounded-full bg-blue-100"></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Card 5: Azure Tide -->
+                    <div
+                        class="group product-card bg-white p-2 md:p-3 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition-all duration-300">
+                        <a href="./product-detail.html">
+                            <div class="relative aspect-[4/5] overflow-hidden bg-[#F9F9F9] rounded-lg mb-4">
+                                <button
+                                    class="absolute top-2 right-2 z-20 w-8 h-8 flex items-center justify-center bg-white/80 backdrop-blur-sm rounded-full text-slate-400 hover:text-red-500 transition-colors shadow-sm">
+                                    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+                                        viewBox="0 0 24 24">
+                                        <path
+                                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                                    </svg>
+                                </button>
+                                <div class="w-full h-full relative p-4">
+                                    <img src="https://images.unsplash.com/photo-1508296695146-257a814070b4?auto=format&fit=crop&q=80&w=800"
+                                        class="primary-img absolute inset-0 w-full h-full object-contain p-6 transition-opacity duration-700">
+                                    <img src="https://images.unsplash.com/photo-1505345266138-5cc97fce783a?auto=format&fit=crop&q=80&w=800"
+                                        class="secondary-img absolute inset-0 w-full h-full object-contain p-6">
+                                </div>
+                                <div
+                                    class="hidden md:flex absolute bottom-0 left-0 w-full p-2 translate-y-full group-hover:translate-y-0 transition-transform duration-500 z-30">
+                                    <button
+                                        class="w-full bg-slate-900 text-white py-3 text-[10px] font-bold uppercase tracking-widest rounded-md hover:bg-black transition-colors">Add
+                                        To Bag</button>
+                                </div>
+                            </div>
+                            <div class="px-1 pb-2">
+                                <div class="flex justify-between items-start">
+                                    <h3
+                                        class="text-[11px] md:text-xs font-bold uppercase tracking-widest text-slate-900 truncate">
+                                        Azure Tide</h3>
+                                    <span class="text-[11px] md:text-xs font-bold text-slate-900">₹29,900</span>
+                                </div>
+                                <p class="text-[10px] md:text-[11px] text-slate-500 mt-1 line-clamp-1">Blue Gradient
+                                    Titanium</p>
+                                <div class="flex gap-1.5 mt-3">
+                                    <div
+                                        class="w-2.5 h-2.5 rounded-full bg-blue-800 ring-1 ring-offset-1 ring-slate-900">
+                                    </div>
+                                    <div class="w-2.5 h-2.5 rounded-full bg-slate-600"></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Card 6: Velvet Dusk -->
+                    <div
+                        class="group product-card bg-white p-2 md:p-3 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition-all duration-300">
+                        <a href="./product-detail.html">
+                            <div class="relative aspect-[4/5] overflow-hidden bg-[#F9F9F9] rounded-lg mb-4">
+                                <div class="absolute top-2 left-2 z-20">
+                                    <span
+                                        class="bg-red-900 text-white px-2 py-1 text-[7px] md:text-[9px] font-bold uppercase tracking-widest rounded-sm shadow-sm">Sold
+                                        Out Soon</span>
+                                </div>
+                                <button
+                                    class="absolute top-2 right-2 z-20 w-8 h-8 flex items-center justify-center bg-white/80 backdrop-blur-sm rounded-full text-slate-400 hover:text-red-500 transition-colors shadow-sm">
+                                    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+                                        viewBox="0 0 24 24">
+                                        <path
+                                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                                    </svg>
+                                </button>
+                                <div class="w-full h-full relative p-4">
+                                    <img src="https://images.unsplash.com/photo-1591076482161-42ce6da69f67?auto=format&fit=crop&q=80&w=800"
+                                        class="primary-img absolute inset-0 w-full h-full object-contain p-6 transition-opacity duration-700">
+                                    <img src="https://images.unsplash.com/photo-1577174881658-0f30ed549adc?auto=format&fit=crop&q=80&w=800"
+                                        class="secondary-img absolute inset-0 w-full h-full object-contain p-6">
+                                </div>
+                                <div
+                                    class="hidden md:flex absolute bottom-0 left-0 w-full p-2 translate-y-full group-hover:translate-y-0 transition-transform duration-500 z-30">
+                                    <button
+                                        class="w-full bg-slate-900 text-white py-3 text-[10px] font-bold uppercase tracking-widest rounded-md hover:bg-black transition-colors">Add
+                                        To Bag</button>
+                                </div>
+                            </div>
+                            <div class="px-1 pb-2">
+                                <div class="flex justify-between items-start">
+                                    <h3
+                                        class="text-[11px] md:text-xs font-bold uppercase tracking-widest text-slate-900 truncate">
+                                        Velvet Dusk</h3>
+                                    <span class="text-[11px] md:text-xs font-bold text-slate-900">₹15,500</span>
+                                </div>
+                                <p class="text-[10px] md:text-[11px] text-slate-500 mt-1 line-clamp-1">Deep Burgundy
+                                    Acetate</p>
+                                <div class="flex gap-1.5 mt-3">
+                                    <div
+                                        class="w-2.5 h-2.5 rounded-full bg-red-950 ring-1 ring-offset-1 ring-slate-900">
+                                    </div>
+                                    <div class="w-2.5 h-2.5 rounded-full bg-black"></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Card 7: Carbon Stealth -->
+                    <div
+                        class="group product-card bg-white p-2 md:p-3 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition-all duration-300">
+                        <a href="./product-detail.html">
+                            <div class="relative aspect-[4/5] overflow-hidden bg-[#F9F9F9] rounded-lg mb-4">
+                                <div class="absolute top-2 left-2 z-20">
+                                    <span
+                                        class="bg-indigo-900 text-white px-2 py-1 text-[7px] md:text-[9px] font-bold uppercase tracking-widest rounded-sm shadow-sm">Top
+                                        Rated</span>
+                                </div>
+                                <button
+                                    class="absolute top-2 right-2 z-20 w-8 h-8 flex items-center justify-center bg-white/80 backdrop-blur-sm rounded-full text-slate-400 hover:text-red-500 transition-colors shadow-sm">
+                                    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+                                        viewBox="0 0 24 24">
+                                        <path
+                                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                                    </svg>
+                                </button>
+                                <div class="w-full h-full relative p-4">
+                                    <img src="https://images.unsplash.com/photo-1551028150-64b9f398f678?auto=format&fit=crop&q=80&w=800"
+                                        class="primary-img absolute inset-0 w-full h-full object-contain p-6 transition-opacity duration-700">
+                                    <img src="https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?auto=format&fit=crop&q=80&w=800"
+                                        class="secondary-img absolute inset-0 w-full h-full object-contain p-6">
+                                </div>
+                                <div
+                                    class="hidden md:flex absolute bottom-0 left-0 w-full p-2 translate-y-full group-hover:translate-y-0 transition-transform duration-500 z-30">
+                                    <button
+                                        class="w-full bg-slate-900 text-white py-3 text-[10px] font-bold uppercase tracking-widest rounded-md hover:bg-black transition-colors">Add
+                                        To Bag</button>
+                                </div>
+                            </div>
+                            <div class="px-1 pb-2">
+                                <div class="flex justify-between items-start">
+                                    <h3
+                                        class="text-[11px] md:text-xs font-bold uppercase tracking-widest text-slate-900 truncate">
+                                        Carbon Stealth</h3>
+                                    <span class="text-[11px] md:text-xs font-bold text-slate-900">₹34,200</span>
+                                </div>
+                                <p class="text-[10px] md:text-[11px] text-slate-500 mt-1 line-clamp-1">Carbon Fiber
+                                    Performance</p>
+                                <div class="flex gap-1.5 mt-3">
+                                    <div
+                                        class="w-2.5 h-2.5 rounded-full bg-slate-900 ring-1 ring-offset-1 ring-slate-900">
+                                    </div>
+                                    <div class="w-2.5 h-2.5 rounded-full bg-slate-700"></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Card 8: Amber Way -->
+                    <div
+                        class="group product-card bg-white p-2 md:p-3 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition-all duration-300">
+                        <a href="./product-detail.html">
+                            <div class="relative aspect-[4/5] overflow-hidden bg-[#F9F9F9] rounded-lg mb-4">
+                                <div class="absolute top-2 left-2 z-20">
+                                    <span
+                                        class="bg-orange-500 text-white px-2 py-1 text-[7px] md:text-[9px] font-bold uppercase tracking-widest rounded-sm shadow-sm">Sale</span>
+                                </div>
+                                <button
+                                    class="absolute top-2 right-2 z-20 w-8 h-8 flex items-center justify-center bg-white/80 backdrop-blur-sm rounded-full text-slate-400 hover:text-red-500 transition-colors shadow-sm">
+                                    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+                                        viewBox="0 0 24 24">
+                                        <path
+                                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                                    </svg>
+                                </button>
+                                <div class="w-full h-full relative p-4">
+                                    <img src="https://images.unsplash.com/photo-1511499767350-a1590fdb2817?auto=format&fit=crop&q=80&w=800"
+                                        class="primary-img absolute inset-0 w-full h-full object-contain p-6 transition-opacity duration-700">
+                                    <img src="https://images.unsplash.com/photo-1591076482161-42ce6da69f67?auto=format&fit=crop&q=80&w=800"
+                                        class="secondary-img absolute inset-0 w-full h-full object-contain p-6">
+                                </div>
+                                <div
+                                    class="hidden md:flex absolute bottom-0 left-0 w-full p-2 translate-y-full group-hover:translate-y-0 transition-transform duration-500 z-30">
+                                    <button
+                                        class="w-full bg-slate-900 text-white py-3 text-[10px] font-bold uppercase tracking-widest rounded-md hover:bg-black transition-colors">Add
+                                        To Bag</button>
+                                </div>
+                            </div>
+                            <div class="px-1 pb-2">
+                                <div class="flex justify-between items-start">
+                                    <h3
+                                        class="text-[11px] md:text-xs font-bold uppercase tracking-widest text-slate-900 truncate">
+                                        Amber Way</h3>
+                                    <span class="text-[11px] md:text-xs font-bold text-slate-900">₹12,800</span>
+                                </div>
+                                <p class="text-[10px] md:text-[11px] text-slate-500 mt-1 line-clamp-1">Classic Amber
+                                    Gradient</p>
+                                <div class="flex gap-1.5 mt-3">
+                                    <div
+                                        class="w-2.5 h-2.5 rounded-full bg-orange-300 ring-1 ring-offset-1 ring-slate-900">
+                                    </div>
+                                    <div class="w-2.5 h-2.5 rounded-full bg-yellow-200"></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- </div> -->
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Filter Controls -->
+        <!-- <div class="flex flex-col md:flex-row justify-between items-center mb-12 space-y-4 md:space-y-0">
+            <div class="flex space-x-8 text-[11px] uppercase tracking-widest font-semibold">
+                <button class="border-b-2 border-slate-900 pb-1">All Models</button>
+                <button class="text-slate-400 hover:text-slate-900 transition">Optical</button>
+                <button class="text-slate-400 hover:text-slate-900 transition">Sunglasses</button>
+            </div>
+            <div class="text-xs text-slate-400">Showing 8 of 42 Models</div>
+        </div> -->
+
+        <!-- Load More Section -->
+        <div class="mt-20 text-center">
+            <button
+                class="bg-slate-900 text-white px-10 py-3 text-[11px] uppercase tracking-widest hover:bg-slate-800 transition-all">
+                Discover More
+            </button>
+        </div>
+    </main>
+
+    <!-- THE BOOKING MODAL -->
+    <div id="bookingModal"
+        class="fixed inset-0 z-[100] flex items-center justify-center opacity-0 pointer-events-none transition-all duration-500 ease-out">
+
+        <!-- Backdrop (Fades in) -->
+        <div class="fixed inset-0 bg-slate-900/60 backdrop-blur-md"></div>
+
+        <!-- Modal Content Positioning -->
+        <div class="relative w-full max-w-2xl px-4">
+            <!-- Inner Card (Fades + Scales up) -->
+            <div id="modalContent"
+                class="relative bg-white rounded-[2.5rem] shadow-2xl overflow-hidden transform scale-95 opacity-0 transition-all duration-500 ease-out">
+
+                <!-- Close Button -->
+                <button onclick="toggleBookingModal()"
+                    class="absolute top-8 right-8 text-slate-400 hover:text-slate-900 transition-colors z-20">
+                    <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+
+                <div class="flex flex-col md:flex-row">
+                    <!-- Left Sidebar (Informational) -->
+                    <div
+                        class="hidden md:flex w-1/3 bg-stone-50 p-10 flex-col justify-between border-r border-stone-100">
+                        <div>
+                            <h3 class="serif text-2xl italic mb-4">Priority <br>Booking</h3>
+                            <p class="text-[11px] text-stone-500 leading-loose">Experience our 42-point visual
+                                assessment in a private suite.</p>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-2 h-2 rounded-full bg-emerald-500"></div>
+                                <span class="text-[9px] font-bold uppercase tracking-widest">Available Today</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Side (The Form) -->
+                    <div class="flex-1 p-8 md:p-12">
+                        <div class="mb-10">
+                            <h2 class="text-[10px] font-bold uppercase tracking-[0.4em] text-stone-400 mb-2">Private
+                                Consultation</h2>
+                            <h3 class="serif text-3xl">Schedule your <span class="italic">Visit</span></h3>
+                        </div>
+
+                        <form class="space-y-6">
+                            <!-- Form Fields remain the same -->
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div class="space-y-2">
+                                    <label class="text-[9px] uppercase font-bold tracking-widest text-slate-400">Full
+                                        Name</label>
+                                    <input type="text" placeholder="John Doe"
+                                        class="w-full bg-stone-50 border-none rounded-xl px-5 py-3 text-sm focus:ring-2 focus:ring-slate-900/5 transition-all">
+                                </div>
+                                <div class="space-y-2">
+                                    <label
+                                        class="text-[9px] uppercase font-bold tracking-widest text-slate-400">Email</label>
+                                    <input type="email" placeholder="john@example.com"
+                                        class="w-full bg-stone-50 border-none rounded-xl px-5 py-3 text-sm focus:ring-2 focus:ring-slate-900/5 transition-all">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div class="space-y-2">
+                                    <label
+                                        class="text-[9px] uppercase font-bold tracking-widest text-slate-400">Preferred
+                                        Date</label>
+                                    <input type="date"
+                                        class="w-full bg-stone-50 border-none rounded-xl px-5 py-3 text-sm focus:ring-2 focus:ring-slate-900/5 transition-all">
+                                </div>
+                                <div class="space-y-2">
+                                    <label class="text-[9px] uppercase font-bold tracking-widest text-slate-400">Time
+                                        Slot</label>
+                                    <select
+                                        class="w-full bg-stone-50 border-none rounded-xl px-5 py-3 text-sm appearance-none">
+                                        <option>Morning (10am - 1pm)</option>
+                                        <option>Afternoon (1pm - 5pm)</option>
+                                        <option>Evening (5pm - 8pm)</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="pt-6">
+                                <button type="submit"
+                                    class="w-full bg-slate-900 text-white py-4 rounded-2xl text-[10px] font-bold uppercase tracking-[0.3em] hover:bg-black transition-all shadow-xl shadow-slate-200">
+                                    Confirm Appointment Request
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Space -->
+    <footer class="relative bg-zinc-950 text-zinc-300  pb-12 overflow-hidden">
+
+        <!-- Fixed Wave Separator -->
+        <div class="absolute top-0 left-0 w-full overflow-hidden leading-[0]">
+            <div class="animate-wave w-[200%] md:w-[150%]">
+                <svg class="relative block w-full h-[80px] md:h-[120px]" viewBox="0 0 1440 120"
+                    preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0,0 C200,100 400,0 600,60 C800,120 1000,0 1200,60 C1400,120 1600,0 1800,60 L1800,0 L0,0 Z"
+                        fill="#FBFBFA"></path>
+                </svg>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10 mt-10">
+
+            <!-- [NEW SECTION] Stay Growing With Us Banner -->
+            <div
+                class="mb-20 bg-zinc-900/40 border border-zinc-800 rounded-[2.5rem] p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8 shadow-2xl backdrop-blur-sm">
+                <div class="text-center md:text-left">
+                    <h3 class="text-3xl md:text-4xl serif text-white mb-3">Stay Growing With Us</h3>
+                    <p class="text-zinc-500 text-sm max-w-md leading-relaxed">
+                        Join our newsletter for the latest in architectural frame design and vision health updates.
+                    </p>
+                </div>
+                <form
+                    class="w-full max-w-md flex bg-zinc-950/50 border border-zinc-800 rounded-full p-1 focus-within:border-emerald-500/50 transition-all duration-500">
+                    <input type="email" placeholder="Enter your email"
+                        class="bg-transparent flex-1 px-6 py-3 text-xs outline-none placeholder:text-zinc-600 text-zinc-300">
+                    <button
+                        class="bg-emerald-500 text-zinc-950 px-8 py-3 rounded-full text-[10px] uppercase font-black tracking-widest hover:bg-emerald-400 transition-all duration-300">
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 mb-20">
+
+                <!-- Brand Column -->
+                <div class="lg:col-span-4">
+                    <div class="text-3xl font-light tracking-tighter text-white mb-6 uppercase">
+                        Lumina <span class="font-extrabold text-emerald-500 italic">Optique</span>
+                    </div>
+                    <p class="text-zinc-400 text-sm leading-relaxed mb-8 max-w-xs">
+                        Redefining the art of vision through architectural precision and avant-garde aesthetics.
+                    </p>
+                    <div class="flex space-x-5">
+                        <a href="#"
+                            class="group flex items-center justify-center w-10 h-10 border border-zinc-800 rounded-full hover:border-emerald-500 transition-all duration-500">
+                            <span
+                                class="text-[10px] group-hover:text-emerald-500 uppercase font-bold tracking-widest">Ig</span>
+                        </a>
+                        <a href="#"
+                            class="group flex items-center justify-center w-10 h-10 border border-zinc-800 rounded-full hover:border-emerald-500 transition-all duration-500">
+                            <span
+                                class="text-[10px] group-hover:text-emerald-500 uppercase font-bold tracking-widest">Tw</span>
+                        </a>
+                        <a href="#"
+                            class="group flex items-center justify-center w-10 h-10 border border-zinc-800 rounded-full hover:border-emerald-500 transition-all duration-500">
+                            <span
+                                class="text-[10px] group-hover:text-emerald-500 uppercase font-bold tracking-widest">Fb</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Links Columns -->
+                <div class="lg:col-span-2">
+                    <h4 class="text-white text-[11px] uppercase tracking-[0.2em] font-bold mb-8">Collection</h4>
+                    <ul class="space-y-4 text-sm font-medium">
+                        <li><a href="#" class="hover:text-emerald-400 transition-colors duration-300">Home</a>
+                        </li>
+                        <li><a href="#" class="hover:text-emerald-400 transition-colors duration-300">About Us</a>
+                        </li>
+                        <li><a href="#" class="hover:text-emerald-400 transition-colors duration-300">Products</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="lg:col-span-2">
+                    <h4 class="text-white text-[11px] uppercase tracking-[0.2em] font-bold mb-8">The Studio</h4>
+                    <ul class="space-y-4 text-sm font-medium">
+                        <li><a href="#" class="hover:text-emerald-400 transition-colors duration-300">Our Heritage</a>
+                        </li>
+                        <li><a href="#" class="hover:text-emerald-400 transition-colors duration-300">Eye Health</a>
+                        </li>
+                        <li><a href="#" class="hover:text-emerald-400 transition-colors duration-300">Concierge</a></li>
+                    </ul>
+                </div>
+
+                <!-- Direct Support Column -->
+                <div class="lg:col-span-4">
+                    <h4 class="text-white text-[11px] uppercase tracking-[0.2em] font-bold mb-8">Direct Support</h4>
+
+                    <div class="space-y-6">
+                        <p class="text-zinc-500 text-xs leading-relaxed">
+                            Have questions? Reach us at:
+                        </p>
+
+                        <a href="tel:+919106627276" class="block group">
+                            <span
+                                class="text-2xl md:text-3xl font-bold text-emerald-500 tracking-tighter group-hover:text-emerald-400 transition-colors duration-300">
+                                +91 91066 27276
+                            </span>
+                            <!-- Decorative underline that grows on hover -->
+                            <div
+                                class="w-12 h-[2px] bg-emerald-500/30 mt-1 group-hover:w-24 transition-all duration-500">
+                            </div>
+                        </a>
+
+                        <div class="flex items-center gap-3 text-zinc-500">
+                            <!-- Simple Clock Icon -->
+                            <svg class="w-4 h-4 text-emerald-500/50" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <span class="text-[10px] uppercase tracking-[0.15em] font-medium">
+                                Mon - Sat: 9:00 AM - 6:00 PM
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div
+                class="pt-10 border-t border-zinc-900 flex flex-col md:flex-row justify-between items-center text-[10px] uppercase tracking-[0.3em] text-zinc-600">
+                <div class="mb-4 md:mb-0">
+                    &copy; 2026 <span class="text-zinc-400">Lumina Optique</span> — All Rights Reserved.
+                </div>
+                <div class="flex space-x-8">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Aesthetic Ambient Light -->
+        <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-emerald-500/5 rounded-full blur-[120px]"></div>
+        <div class="absolute -top-24 -right-24 w-96 h-96 bg-emerald-500/5 rounded-full blur-[120px]"></div>
+
+    </footer>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Experience | Lumina Optique</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="text-slate-900">
+
+    <!-- [NEW] Top Announcement Bar (Offers / Free Eye Test) -->
+    <div
+        class="bg-zinc-950 text-white py-2 text-[9px] uppercase tracking-[0.4em] text-center font-bold relative z-[60]">
+        Complimentary Eye Exam with every Bespoke Frame — <a href="#"
+            class="underline decoration-teal-500 underline-offset-4">Book Yours</a>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-stone-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="text-2xl font-semibold tracking-tighter serif uppercase">Lumina <span
+                        class="font-light text-slate-400">Optique</span></div>
+                <div class="hidden md:flex space-x-8 items-center text-[11px] uppercase tracking-widest font-medium">
+                    <a href="./index.html" class="hover:text-teal-700 transition">Home</a>
+                    <a href="./about.html" class="hover:text-teal-700 transition">About</a>
+                    <a href="./products.html" class="hover:text-teal-700 transition">Products</a>
+                    <a href="./service.html" class="text-teal-700 transition border-b border-teal-700">Services</a>
+                    <a href="./contact-us.html" class="hover:text-teal-700 transition">Contact</a>
+                </div>
+                <div>
+                    <button onclick="toggleBookingModal()"
+                        class="border border-slate-900 px-6 py-2 text-[10px] uppercase tracking-widest hover:bg-slate-900 hover:text-white transition-all duration-300">
+                        Book Exam
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 1. CINEMATIC HERO -->
+    <header class="relative h-screen flex items-center justify-center overflow-hidden">
+        <!-- <img src="https://images.unsplash.com/photo-1581056771107-24ca5f033842?auto=format&fit=crop&q=80&w=2000"
+            class="absolute inset-0 w-full h-full object-cover brightness-[0.7]" alt="Service Banner"> -->
+        <div class="absolute inset-0 z-0">
+            <!-- Added opacity-20 for mobile readability and object-center -->
+            <img src="https://images.unsplash.com/photo-1581056771107-24ca5f033842?auto=format&fit=crop&q=80&w=2000"
+                class="w-full h-full object-cover object-center" alt="Background Decor">
+
+            <!-- Smooth Gradient Mask -->
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-[#FBFBFA]/40 to-[#FBFBFA]"></div>
+        </div>
+        <div class="relative z-10 text-center px-4 max-w-4xl">
+            <p class="uppercase tracking-[0.6em] text-[10px] md:text-xs mb-8 font-semibold text-teal">Defining the
+                future of vision</p>
+            <h1 class="serif text-5xl md:text-8xl italic font-light text-teal leading-tight">Beyond <span
+                    class="font-normal not-italic">Prescription</span></h1>
+            <div class="mt-12 flex flex-col items-center">
+                <div class="w-[1px] h-24 bg-gradient-to-b from-transparent to-teal-800"></div>
+                <p class="mt-8 text-[11px] uppercase tracking-[0.3em] text-teal">Scroll to explore our craft</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- <header class="relative h-[50vh] flex items-center justify-center overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1581056771107-24ca5f033842?auto=format&fit=crop&q=80&w=2000"
+            class="absolute inset-0 w-full h-full object-cover brightness-[0.7]" alt="Service Banner">
+        <div class="relative z-10 text-center text-white px-4">
+            <p class="uppercase tracking-[0.5em] text-[10px] md:text-xs mb-4 font-medium opacity-90">Precision & Care
+            </p>
+            <h1 class="serif text-4xl md:text-7xl italic font-light">Visual <span class="font-normal">Excellence</span>
+            </h1>
+            <p class="mt-6 text-xs md:text-sm tracking-widest uppercase opacity-80 max-w-lg mx-auto leading-loose">
+                Dedicated to the science of sight and the art of the frame.</p>
+        </div>
+    </header> -->
+
+    <!-- 2. PHILOSOPHY SECTION (Customer Satisfaction Utility) -->
+    <section class="py-32 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+            <div>
+                <h2 class="text-[11px] font-bold uppercase tracking-[0.5em] text-stone-400 mb-8">Our Philosophy</h2>
+                <h3 class="serif text-4xl md:text-5xl leading-tight mb-8">Your vision is a <span
+                        class="italic">masterpiece</span> that deserves precision.</h3>
+                <p class="text-stone-500 text-sm leading-loose max-w-md">We don't just sell glasses. We engineer visual
+                    freedom. Every touchpoint, from the digital mapping of your retina to the hand-polishing of your
+                    frames, is designed for ultimate comfort and clarity.</p>
+            </div>
+            <div class="grid grid-cols-2 gap-6">
+                <div class="bg-white p-8 rounded-3xl border border-stone-100 shadow-sm hover:shadow-xl transition-all">
+                    <span class="text-3xl block mb-4">💎</span>
+                    <h4 class="text-[10px] font-bold uppercase tracking-widest mb-2">Lifetime Care</h4>
+                    <p class="text-[10px] text-stone-400 leading-relaxed">Complimentary deep cleaning and frame
+                        alignment for the life of your eyewear.</p>
+                </div>
+                <div
+                    class="bg-white p-8 rounded-3xl border border-stone-100 shadow-sm hover:shadow-xl mt-12 transition-all">
+                    <span class="text-3xl block mb-4">🛡️</span>
+                    <h4 class="text-[10px] font-bold uppercase tracking-widest mb-2">365 Guarantee</h4>
+                    <p class="text-[10px] text-stone-400 leading-relaxed">Accidental damage coverage and 100% adaptation
+                        guarantee on all lenses.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. INTERACTIVE SERVICE TILES -->
+    <section class="bg-slate-900 py-32">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+                <div>
+                    <h2 class="text-white serif text-5xl italic">Bespoke <span class="not-italic">Services</span></h2>
+                    <p class="text-stone-400 text-xs uppercase tracking-[0.3em] mt-4">Tailored to your lifestyle</p>
+                </div>
+                <button
+                    class="text-stone-400 text-[10px] uppercase font-bold tracking-widest border-b border-stone-700 pb-2 hover:text-white transition-colors">Download
+                    Service Menu (PDF)</button>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="group relative aspect-[3/4] overflow-hidden rounded-3xl cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1574258495973-f010dfbb5371?auto=format&fit=crop&q=80&w=1000"
+                        class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent p-10 flex flex-col justify-end">
+                        <h4 class="text-white text-xl uppercase tracking-tighter font-bold mb-2">The Clarity Exam</h4>
+                        <p
+                            class="text-stone-400 text-[11px] leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                            Advanced 4K retinal imaging and neurological visual assessment. (60 mins)</p>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="group relative aspect-[3/4] overflow-hidden rounded-3xl cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&q=80&w=1000"
+                        class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent p-10 flex flex-col justify-end">
+                        <h4 class="text-white text-xl uppercase tracking-tighter font-bold mb-2">Artisan Styling</h4>
+                        <p
+                            class="text-stone-400 text-[11px] leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                            One-on-one session with our lead stylist to curate your eyewear wardrobe. (45 mins)</p>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="group relative aspect-[3/4] overflow-hidden rounded-3xl cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1511499767350-a1590fdb2817?auto=format&fit=crop&q=80&w=1000"
+                        class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent p-10 flex flex-col justify-end">
+                        <h4 class="text-white text-xl uppercase tracking-tighter font-bold mb-2">Lens Lab Access</h4>
+                        <p
+                            class="text-stone-400 text-[11px] leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                            Custom lens tinting and blueprint optimization for high-performance sports. (30 mins)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. CUSTOMER SATISFACTION (The Experience Timeline) -->
+    <!-- Journey Section with Smooth Background Transition -->
+    <section id="journey-section"
+        class="relative py-32 px-6 transition-colors duration-1000 bg-stone-50 overflow-hidden">
+
+        <!-- Background Decorative Elements -->
+        <div class="absolute top-0 left-0 w-full h-full pointer-events-none">
+            <div
+                class="absolute top-1/4 -left-20 w-96 h-96 bg-stone-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30">
+            </div>
+            <div
+                class="absolute bottom-1/4 -right-20 w-96 h-96 bg-slate-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30">
+            </div>
+        </div>
+
+        <div class="max-w-5xl mx-auto relative">
+            <div class="text-center mb-32">
+                <h2 class="serif text-5xl md:text-6xl mb-6">The Boutique Journey</h2>
+                <p class="text-[11px] uppercase tracking-[0.5em] text-stone-400 font-bold">A meticulous path to
+                    perfection</p>
+            </div>
+
+            <!-- The Timeline Container -->
+            <div class="relative">
+
+                <!-- 1. THE VERTICAL LINE (Track) -->
+                <div class="absolute left-10 md:left-1/2 top-0 bottom-0 w-[2px] bg-stone-200 -translate-x-1/2"></div>
+
+                <!-- 2. THE PROGRESS LINE (Fills on scroll) -->
+                <div id="progress-line"
+                    class="absolute left-10 md:left-1/2 top-0 w-[2px] bg-slate-900 -translate-x-1/2 transition-all duration-150 ease-out"
+                    style="height: 0%;"></div>
+
+                <!-- Steps Wrapper -->
+                <div class="space-y-40">
+
+                    <!-- Step 01 -->
+                    <div class="journey-step relative flex flex-col md:flex-row items-center justify-between group">
+                        <div class="hidden md:block w-[42%]"></div> <!-- Spacer for alternating layout -->
+
+                        <!-- Progress Node -->
+                        <div class="absolute left-10 md:left-1/2 -translate-x-1/2 z-10">
+                            <div
+                                class="step-node w-14 h-14 rounded-full bg-white border-2 border-stone-200 flex items-center justify-center text-xs font-bold transition-all duration-500 group-[.active]:border-slate-900 group-[.active]:bg-slate-900 group-[.active]:text-white group-[.active]:shadow-[0_0_20px_rgba(15,23,42,0.3)]">
+                                01
+                            </div>
+                        </div>
+
+                        <div class="w-full md:w-[42%] pl-20 md:pl-0 text-left">
+                            <div
+                                class="bg-white p-8 rounded-3xl border border-stone-100 shadow-sm transition-all duration-700 group-[.active]:translate-y-[-10px] group-[.active]:shadow-xl">
+                                <h4 class="text-[11px] font-bold uppercase tracking-[0.2em] mb-4 text-slate-400">
+                                    Consultation</h4>
+                                <h3 class="serif text-2xl mb-4 italic">A Warm Welcome</h3>
+                                <p class="text-[13px] text-stone-500 leading-loose">Enter our boutique and begin with a
+                                    curated refreshment menu. We discuss your visual history in a private, quiet setting
+                                    to understand your unique lifestyle.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 02 -->
+                    <div
+                        class="journey-step relative flex flex-col md:flex-row-reverse items-center justify-between group">
+                        <div class="hidden md:block w-[42%]"></div> <!-- Spacer for alternating layout -->
+
+                        <div class="absolute left-10 md:left-1/2 -translate-x-1/2 z-10">
+                            <div
+                                class="step-node w-14 h-14 rounded-full bg-white border-2 border-stone-200 flex items-center justify-center text-xs font-bold transition-all duration-500 group-[.active]:border-slate-900 group-[.active]:bg-slate-900 group-[.active]:text-white group-[.active]:shadow-[0_0_20px_rgba(15,23,42,0.3)]">
+                                02
+                            </div>
+                        </div>
+
+                        <div class="w-full md:w-[42%] pl-20 md:pl-0 text-left">
+                            <div
+                                class="bg-white p-8 rounded-3xl border border-stone-100 shadow-sm transition-all duration-700 group-[.active]:translate-y-[-10px] group-[.active]:shadow-xl">
+                                <h4 class="text-[11px] font-bold uppercase tracking-[0.2em] mb-4 text-slate-400">
+                                    Analysis</h4>
+                                <h3 class="serif text-2xl mb-4 italic">Precision Blueprint</h3>
+                                <p class="text-[13px] text-stone-500 leading-loose">Our specialists create a digital
+                                    blueprint of your ocular health and facial anatomy using laser-accurate measurement
+                                    tools ensuring sub-millimeter precision.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 03 -->
+                    <div class="journey-step relative flex flex-col md:flex-row items-center justify-between group">
+                        <div class="hidden md:block w-[42%]"></div>
+
+                        <div class="absolute left-10 md:left-1/2 -translate-x-1/2 z-10">
+                            <div
+                                class="step-node w-14 h-14 rounded-full bg-white border-2 border-stone-200 flex items-center justify-center text-xs font-bold transition-all duration-500 group-[.active]:border-slate-900 group-[.active]:bg-slate-900 group-[.active]:text-white group-[.active]:shadow-[0_0_20px_rgba(15,23,42,0.3)]">
+                                03
+                            </div>
+                        </div>
+
+                        <div class="w-full md:w-[42%] pl-20 md:pl-0 text-left">
+                            <div
+                                class="bg-white p-8 rounded-3xl border border-stone-100 shadow-sm transition-all duration-700 group-[.active]:translate-y-[-10px] group-[.active]:shadow-xl">
+                                <h4 class="text-[11px] font-bold uppercase tracking-[0.2em] mb-4 text-slate-400">Final
+                                    Styling</h4>
+                                <h3 class="serif text-2xl mb-4 italic">The Final Reveal</h3>
+                                <p class="text-[13px] text-stone-500 leading-loose">We ensure your frames are weighted
+                                    perfectly. You leave with a custom-care package and a dedicated concierge for any
+                                    future needs.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. FINAL ACTION (Conversion Utility) -->
+    <section class="bg-stone-50 py-32 text-center">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="serif text-5xl md:text-7xl mb-12 italic">Experience the <br> <span
+                    class="not-italic">Difference.</span></h2>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+                <button
+                    class="w-full sm:w-auto bg-slate-900 text-white px-12 py-5 rounded-full text-[11px] font-bold uppercase tracking-widest hover:scale-105 transition-all shadow-xl shadow-slate-200">
+                    Book Your Experience
+                </button>
+                <button
+                    class="w-full sm:w-auto border border-stone-300 bg-white text-slate-900 px-12 py-5 rounded-full text-[11px] font-bold uppercase tracking-widest hover:bg-stone-100 transition-all">
+                    Virtual Consultation
+                </button>
+            </div>
+            <p class="mt-12 text-[10px] uppercase tracking-[0.4em] text-stone-400">Available at all Flagship Boutiques
+            </p>
+        </div>
+    </section>
+
+    <!-- THE BOOKING MODAL -->
+    <div id="bookingModal"
+        class="fixed inset-0 z-[100] flex items-center justify-center opacity-0 pointer-events-none transition-all duration-500 ease-out">
+
+        <!-- Backdrop (Fades in) -->
+        <div class="fixed inset-0 bg-slate-900/60 backdrop-blur-md"></div>
+
+        <!-- Modal Content Positioning -->
+        <div class="relative w-full max-w-2xl px-4">
+            <!-- Inner Card (Fades + Scales up) -->
+            <div id="modalContent"
+                class="relative bg-white rounded-[2.5rem] shadow-2xl overflow-hidden transform scale-95 opacity-0 transition-all duration-500 ease-out">
+
+                <!-- Close Button -->
+                <button onclick="toggleBookingModal()"
+                    class="absolute top-8 right-8 text-slate-400 hover:text-slate-900 transition-colors z-20">
+                    <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+
+                <div class="flex flex-col md:flex-row">
+                    <!-- Left Sidebar (Informational) -->
+                    <div
+                        class="hidden md:flex w-1/3 bg-stone-50 p-10 flex-col justify-between border-r border-stone-100">
+                        <div>
+                            <h3 class="serif text-2xl italic mb-4">Priority <br>Booking</h3>
+                            <p class="text-[11px] text-stone-500 leading-loose">Experience our 42-point visual
+                                assessment in a private suite.</p>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-2 h-2 rounded-full bg-emerald-500"></div>
+                                <span class="text-[9px] font-bold uppercase tracking-widest">Available Today</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Side (The Form) -->
+                    <div class="flex-1 p-8 md:p-12">
+                        <div class="mb-10">
+                            <h2 class="text-[10px] font-bold uppercase tracking-[0.4em] text-stone-400 mb-2">Private
+                                Consultation</h2>
+                            <h3 class="serif text-3xl">Schedule your <span class="italic">Visit</span></h3>
+                        </div>
+
+                        <form class="space-y-6">
+                            <!-- Form Fields remain the same -->
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div class="space-y-2">
+                                    <label class="text-[9px] uppercase font-bold tracking-widest text-slate-400">Full
+                                        Name</label>
+                                    <input type="text" placeholder="John Doe"
+                                        class="w-full bg-stone-50 border-none rounded-xl px-5 py-3 text-sm focus:ring-2 focus:ring-slate-900/5 transition-all">
+                                </div>
+                                <div class="space-y-2">
+                                    <label
+                                        class="text-[9px] uppercase font-bold tracking-widest text-slate-400">Email</label>
+                                    <input type="email" placeholder="john@example.com"
+                                        class="w-full bg-stone-50 border-none rounded-xl px-5 py-3 text-sm focus:ring-2 focus:ring-slate-900/5 transition-all">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div class="space-y-2">
+                                    <label
+                                        class="text-[9px] uppercase font-bold tracking-widest text-slate-400">Preferred
+                                        Date</label>
+                                    <input type="date"
+                                        class="w-full bg-stone-50 border-none rounded-xl px-5 py-3 text-sm focus:ring-2 focus:ring-slate-900/5 transition-all">
+                                </div>
+                                <div class="space-y-2">
+                                    <label class="text-[9px] uppercase font-bold tracking-widest text-slate-400">Time
+                                        Slot</label>
+                                    <select
+                                        class="w-full bg-stone-50 border-none rounded-xl px-5 py-3 text-sm appearance-none">
+                                        <option>Morning (10am - 1pm)</option>
+                                        <option>Afternoon (1pm - 5pm)</option>
+                                        <option>Evening (5pm - 8pm)</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="pt-6">
+                                <button type="submit"
+                                    class="w-full bg-slate-900 text-white py-4 rounded-2xl text-[10px] font-bold uppercase tracking-[0.3em] hover:bg-black transition-all shadow-xl shadow-slate-200">
+                                    Confirm Appointment Request
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="relative bg-zinc-950 text-zinc-300  pb-12 overflow-hidden">
+
+        <!-- Fixed Wave Separator -->
+        <div class="absolute top-0 left-0 w-full overflow-hidden leading-[0]">
+            <div class="animate-wave w-[200%] md:w-[150%]">
+                <svg class="relative block w-full h-[80px] md:h-[120px]" viewBox="0 0 1440 120"
+                    preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0,0 C200,100 400,0 600,60 C800,120 1000,0 1200,60 C1400,120 1600,0 1800,60 L1800,0 L0,0 Z"
+                        fill="#FBFBFA"></path>
+                </svg>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10 mt-10">
+
+            <!-- [NEW SECTION] Stay Growing With Us Banner -->
+            <div
+                class="mb-20 bg-zinc-900/40 border border-zinc-800 rounded-[2.5rem] p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8 shadow-2xl backdrop-blur-sm">
+                <div class="text-center md:text-left">
+                    <h3 class="text-3xl md:text-4xl serif text-white mb-3">Stay Growing With Us</h3>
+                    <p class="text-zinc-500 text-sm max-w-md leading-relaxed">
+                        Join our newsletter for the latest in architectural frame design and vision health updates.
+                    </p>
+                </div>
+                <form
+                    class="w-full max-w-md flex bg-zinc-950/50 border border-zinc-800 rounded-full p-1 focus-within:border-emerald-500/50 transition-all duration-500">
+                    <input type="email" placeholder="Enter your email"
+                        class="bg-transparent flex-1 px-6 py-3 text-xs outline-none placeholder:text-zinc-600 text-zinc-300">
+                    <button
+                        class="bg-emerald-500 text-zinc-950 px-8 py-3 rounded-full text-[10px] uppercase font-black tracking-widest hover:bg-emerald-400 transition-all duration-300">
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 mb-20">
+
+                <!-- Brand Column -->
+                <div class="lg:col-span-4">
+                    <div class="text-3xl font-light tracking-tighter text-white mb-6 uppercase">
+                        Lumina <span class="font-extrabold text-emerald-500 italic">Optique</span>
+                    </div>
+                    <p class="text-zinc-400 text-sm leading-relaxed mb-8 max-w-xs">
+                        Redefining the art of vision through architectural precision and avant-garde aesthetics.
+                    </p>
+                    <div class="flex space-x-5">
+                        <a href="#"
+                            class="group flex items-center justify-center w-10 h-10 border border-zinc-800 rounded-full hover:border-emerald-500 transition-all duration-500">
+                            <span
+                                class="text-[10px] group-hover:text-emerald-500 uppercase font-bold tracking-widest">Ig</span>
+                        </a>
+                        <a href="#"
+                            class="group flex items-center justify-center w-10 h-10 border border-zinc-800 rounded-full hover:border-emerald-500 transition-all duration-500">
+                            <span
+                                class="text-[10px] group-hover:text-emerald-500 uppercase font-bold tracking-widest">Tw</span>
+                        </a>
+                        <a href="#"
+                            class="group flex items-center justify-center w-10 h-10 border border-zinc-800 rounded-full hover:border-emerald-500 transition-all duration-500">
+                            <span
+                                class="text-[10px] group-hover:text-emerald-500 uppercase font-bold tracking-widest">Fb</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Links Columns -->
+                <div class="lg:col-span-2">
+                    <h4 class="text-white text-[11px] uppercase tracking-[0.2em] font-bold mb-8">Collection</h4>
+                    <ul class="space-y-4 text-sm font-medium">
+                        <li><a href="#" class="hover:text-emerald-400 transition-colors duration-300">Home</a>
+                        </li>
+                        <li><a href="#" class="hover:text-emerald-400 transition-colors duration-300">About Us</a>
+                        </li>
+                        <li><a href="#" class="hover:text-emerald-400 transition-colors duration-300">Products</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="lg:col-span-2">
+                    <h4 class="text-white text-[11px] uppercase tracking-[0.2em] font-bold mb-8">The Studio</h4>
+                    <ul class="space-y-4 text-sm font-medium">
+                        <li><a href="#" class="hover:text-emerald-400 transition-colors duration-300">Our Heritage</a>
+                        </li>
+                        <li><a href="#" class="hover:text-emerald-400 transition-colors duration-300">Eye Health</a>
+                        </li>
+                        <li><a href="#" class="hover:text-emerald-400 transition-colors duration-300">Concierge</a></li>
+                    </ul>
+                </div>
+
+                <!-- Direct Support Column -->
+                <div class="lg:col-span-4">
+                    <h4 class="text-white text-[11px] uppercase tracking-[0.2em] font-bold mb-8">Direct Support</h4>
+
+                    <div class="space-y-6">
+                        <p class="text-zinc-500 text-xs leading-relaxed">
+                            Have questions? Reach us at:
+                        </p>
+
+                        <a href="tel:+919106627276" class="block group">
+                            <span
+                                class="text-2xl md:text-3xl font-bold text-emerald-500 tracking-tighter group-hover:text-emerald-400 transition-colors duration-300">
+                                +91 91066 27276
+                            </span>
+                            <!-- Decorative underline that grows on hover -->
+                            <div
+                                class="w-12 h-[2px] bg-emerald-500/30 mt-1 group-hover:w-24 transition-all duration-500">
+                            </div>
+                        </a>
+
+                        <div class="flex items-center gap-3 text-zinc-500">
+                            <!-- Simple Clock Icon -->
+                            <svg class="w-4 h-4 text-emerald-500/50" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <span class="text-[10px] uppercase tracking-[0.15em] font-medium">
+                                Mon - Sat: 9:00 AM - 6:00 PM
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div
+                class="pt-10 border-t border-zinc-900 flex flex-col md:flex-row justify-between items-center text-[10px] uppercase tracking-[0.3em] text-zinc-600">
+                <div class="mb-4 md:mb-0">
+                    &copy; 2026 <span class="text-zinc-400">Lumina Optique</span> — All Rights Reserved.
+                </div>
+                <div class="flex space-x-8">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Aesthetic Ambient Light -->
+        <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-emerald-500/5 rounded-full blur-[120px]"></div>
+        <div class="absolute -top-24 -right-24 w-96 h-96 bg-emerald-500/5 rounded-full blur-[120px]"></div>
+
+    </footer>
+
+    <script src="./script.js"></script>
+
+
+    <!-- SMALL SCRIPT FOR PROGRESS LINE AND SCROLL REVEAL -->
+    <script>
+        window.addEventListener('scroll', () => {
+            const section = document.getElementById('journey-section');
+            const progressLine = document.getElementById('progress-line');
+            const steps = document.querySelectorAll('.journey-step');
+
+            // 1. Calculate Progress Line Height
+            const sectionRect = section.getBoundingClientRect();
+            const sectionHeight = section.offsetHeight;
+            const windowHeight = window.innerHeight;
+
+            // Start filling when top of section enters middle of screen
+            let progress = ((windowHeight / 2) - sectionRect.top) / (sectionHeight - (windowHeight / 2)) * 100;
+            progress = Math.min(Math.max(progress, 0), 100);
+            progressLine.style.height = `${progress}%`;
+
+            // 2. Add 'active' class to steps as they enter viewport
+            steps.forEach((step, index) => {
+                const stepRect = step.getBoundingClientRect();
+                if (stepRect.top < windowHeight * 0.7) {
+                    step.classList.add('active');
+                } else {
+                    step.classList.remove('active');
+                }
+            });
+
+            // 3. Smooth Background Change
+            if (progress > 10 && progress < 90) {
+                section.style.backgroundColor = '#F1F5F9'; // Slate 50
+            } else {
+                section.style.backgroundColor = '#FAF9F6'; // Stone 50
+            }
+        });
+    </script>
+
+</body>
+
+</html>

@@ -4,16 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | LUMINA Atelier</title>
+    <title>The Artisan | Lumina Optique</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-
     <link rel="stylesheet" href="./style.css">
 </head>
 
-<body class="text-slate-900 overflow-x-hidden sans">
+<body class="bg-white text-slate-900">
 
     <!-- [NEW] Top Announcement Bar (Offers / Free Eye Test) -->
     <div
@@ -22,7 +21,7 @@
             class="underline decoration-teal-500 underline-offset-4">Book Yours</a>
     </div>
 
-    <!-- Navigation -->
+    <!-- Navigation (Same as Home) -->
     <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-stone-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
@@ -30,8 +29,8 @@
                         class="font-light text-slate-400">Optique</span></div>
                 <div class="hidden md:flex space-x-8 items-center text-[11px] uppercase tracking-widest font-medium">
                     <a href="./index.html" class="hover:text-teal-700 transition">Home</a>
-                    <a href="./about.html" class="text-teal-700 transition border-b border-teal-700">About</a>
-                    <a href="./products.html" class="hover:text-teal-700 transition">Products</a>
+                    <a href="./about.html" class="hover:text-teal-700 transition ">About</a>
+                    <a href="./products.html" class="text-teal-700 transition border-b border-teal-700">Products</a>
                     <a href="./service.html" class="hover:text-teal-700 transition">Services</a>
                     <a href="./contact-us.html" class="hover:text-teal-700 transition">Contact</a>
                 </div>
@@ -45,220 +44,128 @@
         </div>
     </nav>
 
-    <!-- ENHANCED HERO SECTION -->
-    <!-- UPDATED HERO SECTION (Optimized for Mobile) -->
-    <section
-        class="relative min-h-[80vh] md:min-h-0 md:pt-48 md:pb-24 flex flex-col items-center justify-center overflow-hidden bg-[#FBFBFA]">
-
-        <!-- Background Layer -->
-        <div class="absolute inset-0 z-0">
-            <!-- Added opacity-20 for mobile readability and object-center -->
-            <img src="./images/stylish-young-caucasian-woman-wearing-glasses-smiling-posing-against-beige-background.jpg"
-                class="w-full h-full object-cover object-center" alt="Background Decor">
-
-            <!-- Smooth Gradient Mask -->
-            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-[#FBFBFA]/40 to-[#FBFBFA]"></div>
-        </div>
-
-        <!-- Content (Centered for mobile) -->
-        <div class="relative z-10 w-full max-w-7xl mx-auto px-6 text-center">
-            <span
-                class="inline-block text-teal-800 uppercase tracking-[0.5em] text-[9px] md:text-[10px] font-bold mb-4 md:mb-6">
-                Established 1994
-            </span>
-
-            <!-- Adjusted text size for smaller mobile screens (text-5xl) -->
-            <h1 class="text-5xl md:text-8xl serif leading-tight mb-6 md:mb-8 text-slate-900">
-                Crafting <br>
-                <span class="italic text-slate-400 font-light">Clarity.</span>
+    <!-- 1. TOP HERO BANNER -->
+    <header class="relative h-[30vh] md:h-[45vh] flex items-center justify-center overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1574258495973-f010dfbb5371?q=80&w=2070&auto=format&fit=crop"
+            class="absolute inset-0 w-full h-full object-cover brightness-[0.6]" alt="Banner">
+        <div class="relative z-10 text-center text-white px-4">
+            <p class="uppercase tracking-[0.5em] text-[10px] mb-3 font-medium opacity-80">Collection 2026</p>
+            <h1 class="serif text-4xl md:text-6xl italic font-light">The Artisan <span class="font-normal">Series</span>
             </h1>
-
-            <!-- Minimalist Separator -->
-            <div class="w-px h-16 md:h-24 bg-gradient-to-b from-slate-200 to-transparent mx-auto mt-8 md:mt-12"></div>
         </div>
-    </section>
+    </header>
 
-    <!-- MISSION SECTION: THE ARTISAN HERITAGE -->
-    <section id="mission" class="py-24 md:py-32 bg-white overflow-hidden">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+    <!-- 2. PRODUCT DETAIL SECTION -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
+        <div class="flex flex-col lg:flex-row gap-12 lg:gap-20">
 
-                <!-- Content Panel (Left) -->
-                <div class="lg:col-span-6 order-2 lg:order-1">
-                    <div class="max-w-xl">
-                        <div class="flex items-center gap-4 mb-8">
-                            <span class="text-teal-800 text-[10px] font-bold uppercase tracking-[0.4em]">Our
-                                Mission</span>
-                            <div class="flex-1 h-px bg-slate-100"></div>
-                        </div>
-
-                        <h2 class="text-4xl md:text-5xl serif leading-tight text-slate-900 mb-8">
-                            The Synthesis of <br>
-                            <span class="italic text-slate-400">Science & Artistry.</span>
-                        </h2>
-
-                        <p class="text-slate-600 leading-relaxed text-lg font-light mb-8">
-                            Founded in 1994, our mission has remained unchanged: to preserve the soul of Italian
-                            handcrafted frames while integrating the world's most advanced digital lens technology.
-                        </p>
-
-                        <p class="text-slate-500 leading-relaxed font-light mb-10">
-                            We don't believe in mass production. We believe in the "slow-made" philosophy—where every
-                            curve is inspected by human hands and every lens is calibrated to 0.01D precision. For us,
-                            vision is a personal masterpiece.
-                        </p>
-
-                        <!-- Boutique Detail -->
-                        <div
-                            class="inline-flex items-center gap-6 p-6 border border-slate-100 rounded-2xl bg-[#FBFBFA]">
-                            <div class="text-3xl serif italic text-teal-800">30</div>
-                            <div class="text-[9px] uppercase tracking-widest font-bold text-slate-400 leading-tight">
-                                Years of <br> Unwavering Precision
-                            </div>
-                        </div>
-                    </div>
+            <!-- LEFT: Product Images -->
+            <div class="flex-1 space-y-4">
+                <div
+                    class="aspect-[4/5] bg-[#F9F9F9] rounded-2xl overflow-hidden border border-slate-100 p-10 flex items-center justify-center">
+                    <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&q=80&w=1200"
+                        class="w-full h-full object-contain" alt="Product Main Image">
                 </div>
-
-                <!-- Image Panel (Right) -->
-                <div class="lg:col-span-6 order-1 lg:order-2 relative">
-                    <div class="relative z-10 aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
-                        <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=1000"
-                            class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000"
-                            alt="Craftsmanship">
+                <!-- Thumbnails -->
+                <div class="grid grid-cols-4 gap-4">
+                    <div class="aspect-square bg-[#F9F9F9] rounded-lg border-2 border-slate-900 p-2 cursor-pointer">
+                        <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&w=400"
+                            class="w-full h-full object-contain">
                     </div>
-                    <!-- Decorative Element -->
-                    <div class="absolute -top-10 -right-10 w-64 h-64 bg-[#F2F0EB] rounded-full -z-0 opacity-50"></div>
-                    <div class="absolute -bottom-6 -left-6 w-32 h-32 border-l border-b border-teal-800/20 -z-0"></div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- VISION SECTION: THE FUTURE OF OPTICS -->
-    <section id="vision" class="py-24 md:py-32 bg-[#FBFBFA]">
-        <div class="max-w-5xl mx-auto px-6 text-center">
-
-            <span class="text-teal-800 text-[10px] font-bold uppercase tracking-[0.5em] mb-12 block">Our Vision</span>
-
-            <h2 class="text-5xl md:text-7xl serif leading-[1.1] text-slate-900 mb-16">
-                Establishing the Global <br>
-                <span class="italic text-slate-400 font-light">Benchmark of Clarity.</span>
-            </h2>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 text-left border-t border-slate-200 pt-16">
-                <!-- Vision Pillar 1 -->
-                <div class="group">
-                    <div class="text-teal-800 mb-6 group-hover:translate-x-2 transition-transform duration-500">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="1.5">
-                            <circle cx="12" cy="12" r="10" />
-                            <path d="m16 12-4-4-4 4M12 16V9" />
-                        </svg>
+                    <div
+                        class="aspect-square bg-[#F9F9F9] rounded-lg border border-slate-100 p-2 cursor-not-allowed opacity-50">
+                        <img src="https://images.unsplash.com/photo-1591076482161-42ce6da69f67?auto=format&fit=crop&w=400"
+                            class="w-full h-full object-contain">
                     </div>
-                    <h3 class="text-xs uppercase tracking-[0.3em] font-bold text-slate-900 mb-4">Beyond Sight</h3>
-                    <p class="text-slate-500 font-light leading-relaxed">
-                        We envision a future where optical wear is not a correction, but an enhancement. Our vision is
-                        to lead the world in "Perceptual Engineering"—designing lenses that actually improve the brain's
-                        ability to process light.
-                    </p>
-                </div>
-
-                <!-- Vision Pillar 2 -->
-                <div class="group">
-                    <div class="text-teal-800 mb-6 group-hover:translate-x-2 transition-transform duration-500">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="1.5">
-                            <path d="M12 2v20M2 12h20" />
-                            <circle cx="12" cy="12" r="10" />
-                        </svg>
-                    </div>
-                    <h3 class="text-xs uppercase tracking-[0.3em] font-bold text-slate-900 mb-4">Sustainability of Sight
-                    </h3>
-                    <p class="text-slate-500 font-light leading-relaxed">
-                        By 2030, our vision is to become the first carbon-neutral optical boutique. We are pioneering
-                        new biodegradable materials that don't just look beautiful, but protect the very world we want
-                        you to see clearly.
-                    </p>
                 </div>
             </div>
 
-            <!-- Call to Action / Quote -->
-            <div class="mt-24 pt-12 border-t border-slate-100 flex flex-col items-center">
-                <p class="text-sm italic text-slate-400 font-light max-w-lg mb-8">
-                    "We don't just see the future; we bring it into focus."
+            <!-- RIGHT: Product Content -->
+            <div class="flex-1 space-y-8">
+                <!-- Title & Price -->
+                <div>
+                    <nav class="flex mb-4 text-[10px] uppercase tracking-widest text-slate-400 font-bold">
+                        <a href="products.html" class="hover:text-slate-900">Products</a>
+                        <span class="mx-2">/</span>
+                        <span class="text-slate-900">Sunglasses</span>
+                    </nav>
+                    <h2 class="text-3xl md:text-4xl font-bold uppercase tracking-tighter text-slate-900">The Artisan
+                    </h2>
+                    <p class="text-xl font-medium text-slate-600 mt-2">₹24,500</p>
+                </div>
+
+                <!-- Description -->
+                <p class="text-sm leading-relaxed text-slate-500 max-w-md">
+                    Meticulously hand-finished in Northern Italy, The Artisan represents the pinnacle of eyewear
+                    engineering. Featuring signature "Smoked Tortoise" acetate and polarized G-15 lenses for
+                    unparalleled clarity.
                 </p>
-                <div class="w-12 h-px bg-teal-800"></div>
-            </div>
-        </div>
-    </section>
 
-    <!-- WHY CHOOSE US (Editorial Grid) -->
-    <section class="py-32 bg-[#F2F0EB]">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center mb-24">
-                <span class="text-teal-800 uppercase tracking-[0.4em] text-[10px] font-bold mb-4 block">The Lumina
-                    Edge</span>
-                <h2 class="text-5xl serif">Why Choose <span class="italic text-slate-400">Us?</span></h2>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                <!-- Pillar 1 -->
-                <div
-                    class="bg-white p-12 rounded-3xl border border-stone-200 transition-all hover:-translate-y-2 duration-500">
-                    <div
-                        class="w-12 h-12 bg-slate-50 rounded-full flex items-center justify-center mb-8 text-teal-800 font-bold serif italic text-2xl">
-                        01</div>
-                    <h3 class="text-xs uppercase tracking-[0.3em] font-bold mb-6">Clinical Precision</h3>
-                    <p class="text-slate-500 text-sm leading-relaxed font-light">Every lens is digitally surfaced using
-                        proprietary HD Visual Engine technology, ensuring zero peripheral distortion.</p>
+                <!-- Color Selection -->
+                <div>
+                    <h3 class="text-[11px] font-bold uppercase tracking-[0.2em] mb-4">Color: Smoked Tortoise</h3>
+                    <div class="flex gap-4">
+                        <button class="w-8 h-8 rounded-full bg-[#4A3728] ring-2 ring-offset-2 ring-slate-900"></button>
+                        <button
+                            class="w-8 h-8 rounded-full bg-black hover:ring-2 hover:ring-offset-2 hover:ring-slate-300 transition-all"></button>
+                        <button
+                            class="w-8 h-8 rounded-full bg-slate-200 hover:ring-2 hover:ring-offset-2 hover:ring-slate-300 transition-all"></button>
+                    </div>
                 </div>
 
-                <!-- Pillar 2 -->
-                <div
-                    class="bg-white p-12 rounded-3xl border border-stone-200 transition-all hover:-translate-y-2 duration-500">
-                    <div
-                        class="w-12 h-12 bg-slate-50 rounded-full flex items-center justify-center mb-8 text-teal-800 font-bold serif italic text-2xl">
-                        02</div>
-                    <h3 class="text-xs uppercase tracking-[0.3em] font-bold mb-6">Italian Artistry</h3>
-                    <p class="text-slate-500 text-sm leading-relaxed font-light">Our frames are hand-finished in the
-                        Dolomites, using biodegradable acetates and aerospace-grade titanium.</p>
+                <!-- Size Selection -->
+                <div>
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="text-[11px] font-bold uppercase tracking-[0.2em]">Select Size</h3>
+                        <button class="text-[10px] font-bold text-slate-400 border-b border-slate-200">Size
+                            Guide</button>
+                    </div>
+                    <div class="flex gap-3">
+                        <button
+                            class="px-6 py-2 border border-slate-200 rounded-md text-xs font-bold hover:border-slate-900 transition-all">Small</button>
+                        <button class="px-6 py-2 border-2 border-slate-900 rounded-md text-xs font-bold">Medium</button>
+                        <button
+                            class="px-6 py-2 border border-slate-200 rounded-md text-xs font-bold hover:border-slate-900 transition-all">Large</button>
+                    </div>
                 </div>
 
-                <!-- Pillar 3 -->
-                <div
-                    class="bg-white p-12 rounded-3xl border border-stone-200 transition-all hover:-translate-y-2 duration-500">
-                    <div
-                        class="w-12 h-12 bg-slate-50 rounded-full flex items-center justify-center mb-8 text-teal-800 font-bold serif italic text-2xl">
-                        03</div>
-                    <h3 class="text-xs uppercase tracking-[0.3em] font-bold mb-6">Bespoke Fitting</h3>
-                    <p class="text-slate-500 text-sm leading-relaxed font-light">We don't just sell frames; we provide
-                        1-on-1 consultations to match frames to your facial anatomy and lifestyle.</p>
+                <!-- CTA Actions -->
+                <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                    <button
+                        class="flex-1 bg-slate-900 text-white py-4 rounded-xl text-xs font-bold uppercase tracking-widest hover:bg-black transition-all shadow-lg shadow-slate-200">
+                        Add to Shopping Bag
+                    </button>
+                    <button class="px-6 py-4 border border-slate-200 rounded-xl hover:bg-slate-50 transition-all">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Product Details Accordion -->
+                <div class="border-t border-slate-100 pt-6 space-y-4">
+                    <div class="flex justify-between items-center cursor-pointer group">
+                        <span class="text-[11px] font-bold uppercase tracking-widest text-slate-900">Materials &
+                            Care</span>
+                        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <path d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </div>
+                    <div class="flex justify-between items-center cursor-pointer group">
+                        <span class="text-[11px] font-bold uppercase tracking-widest text-slate-900">Shipping &
+                            Returns</span>
+                        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <path d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- OUR PROMISE (Statement Section) -->
-    <section class="py-32 bg-slate-900 text-white overflow-hidden relative">
-        <!-- Decor Text -->
-        <div
-            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[30vw] serif italic text-white/[0.03] select-none pointer-events-none">
-            Promise
-        </div>
-
-        <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
-            <span class="text-teal-400 uppercase tracking-[0.5em] text-[10px] font-bold mb-12 block">The
-                Commitment</span>
-            <h2 class="text-4xl md:text-6xl serif italic leading-tight mb-12">
-                "We promise a visual experience so seamless, you'll forget you're wearing lenses at all."
-            </h2>
-            <div class="flex flex-col items-center">
-                <div class="w-20 h-px bg-teal-400 mb-8"></div>
-                <p class="uppercase tracking-[0.3em] text-[10px] font-bold">Lumina Executive Board</p>
-            </div>
-        </div>
-    </section>
+    </main>
 
     <!-- THE BOOKING MODAL -->
     <div id="bookingModal"
